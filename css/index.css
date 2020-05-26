@@ -1,0 +1,211 @@
+
+:root {
+  --primary-color: #3a4052;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+/* bckgrnd pic & it's foregrbd text
+************************************ */
+.imgbckgrnd {
+  background-image: url("../assets/img/beachCoding.jpg");
+  padding-top: 0vh;
+  margin-top: 0vh;
+  position: relative;
+
+  background-size:cover;
+  /* background-position-x: center;
+  background-position-y: center; */
+  background-repeat: no-repeat;
+  height: 50vh;  /* "height: 100vh" will be used for the desktop backgrnd size  */
+  
+ }
+ 
+ .intro {
+   align-content: flex-start;
+   margin-top: 15vh;
+   margin-left: 5vh;
+   color: goldenrod;
+   text-size-adjust: 3px;
+   position: absolute;
+ }
+
+ /* text animation 
+ *************************************/
+ .ytxtanimt {
+  font-family: 'Raleway', sans-serif;
+  height: 60vh;
+  background: #333 url('../assets/img/bricks.jpg') no-repeat center center / cover;
+  color: white;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  box-shadow: aqua;
+  overflow:hidden;
+}
+
+.ytxtcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40vh;
+  padding: 0 3rem;
+  /* background-image: url('../assets/img/devPic.jpg'); */
+}
+
+.ytxth1, .ytxth2 {
+  font-weight: 200;
+  margin: 0.4rem;
+}
+
+.ytxth1 {
+  font-size: 3.5rem;
+}
+
+.ytxth2 {
+  font-size: 2rem;
+  color: white;
+}
+
+/* Cursor */
+.txt-type > .txt {
+  border-right: 0.2rem solid rgb(255, 255, 255);
+}
+
+@media(min-width: 1200px) {
+  .txth1 {
+    font-size: 5rem;
+  }
+}
+
+@media(max-width: 800px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .ytxth1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media(max-width: 500px) {
+  .ytxth1 {
+    font-size: 2rem;
+  }
+
+  .ytxth2 {
+    font-size: 1.5rem;
+  }
+}
+ 
+/* background video
+************************************ */
+.showcase {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+  position: relative;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--primary-color) url('./https://traversymedia.com/downloads/cover.jpg') no-repeat center
+      center/cover;
+}
+
+.video-container video {
+  /* max-width: 300%;
+  max-height: 300%; */
+  height: 100%;
+  width: 100%;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  position: absolute;
+  /* position: inherit; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.video-container:after {
+  content: '';
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+}
+
+.content {
+  z-index: 2;
+  text-align: left;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 30px;
+  background: var(--primary-color);
+  color: #fff;
+  border-radius: 5px;
+  border: solid #fff 1px;
+  margin-top: 25px;
+  opacity: 0.7;
+
+}
+
+.btn:hover {
+  color: red;
+  border-color: red;
+  transform: scale(0.98);
+}
+
+#about {
+  padding: 40px;
+  text-align: center;
+}
+
+#about p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+#about h2 {
+  margin: 30px 0;
+  color: var(--primary-color);
+}

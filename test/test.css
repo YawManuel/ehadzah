@@ -1,0 +1,60 @@
+.ytxtanimt {
+  font-family: 'Raleway', sans-serif;
+  height: 50vh;
+  background: #333 url('../assets/img/bricks.jpg') no-repeat center center / cover;
+  color: white;
+  overflow:hidden;
+}
+
+.ytxtcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 0 3rem;
+}
+
+.ytxth1, .ytxth2 {
+  font-weight: 200;
+  margin: 0.4rem;
+}
+
+.ytxth1 {
+  font-size: 3.5rem;
+}
+
+.ytxth2 {
+  font-size: 2rem;
+  color: white;
+}
+
+/* Cursor */
+.txt-type > .txt {
+  border-right: 0.2rem solid rgb(255, 255, 255);
+}
+
+@media(min-width: 1200px) {
+  .txth1 {
+    font-size: 5rem;
+  }
+}
+
+@media(max-width: 800px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .ytxth1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media(max-width: 500px) {
+  .ytxth1 {
+    font-size: 2rem;
+  }
+
+  .ytxth2 {
+    font-size: 1.5rem;
+  }
+}

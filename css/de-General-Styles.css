@@ -1,0 +1,450 @@
+:root {
+  --primary-color: #3a4052;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Mobile first */
+
+/*                 de-Main-Navbar
+********************************************************************* */
+/* .dnav {
+  visibility: visible;
+  } */
+@media (min-width:368) {
+  .navmenuitems {
+    visibility: hidden;
+    display: inline-flex;
+    height: 20px;
+ 
+    padding: 10px;
+    text-decoration: none; 
+  }     
+}
+
+@media (min-width:768px) {
+  .navigation-clean {
+    padding-top:1rem;
+    padding-bottom:1rem;
+  }
+
+  
+  
+    .menu-btn {
+      visibility: hidden;
+    }
+}
+
+/* the whole navbar ( for both nav-menus and nav-collapse ) */
+
+.dnav {
+ z-index: 6; 
+ position: fixed;
+ background-color: rgb(255, 255, 255, 2);
+ height: 10%;
+ width: 100%;
+ margin-top: 0px;
+ margin-bottom: 20px;
+ 
+} 
+
+ .ynavig {
+  display:inline-block;
+  position: fixed;
+  background: blue;
+  height: 10vh;
+  width: 100%;
+  /* margin-left: 0px; */
+  margin-top: 0px;
+  z-index: 6;
+} 
+
+.menu-btn {
+  position: absolute;
+  z-index: 8;
+  right: 1rem;
+  top: 1rem;
+  height: 20px;
+  width: 28px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__burger {
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+  width: 28px;
+  height: 3px;
+  background: black;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__burger::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  width: 28px;
+  height: 3px;
+  background: black;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__burger::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  width: 20px;
+  height: 3px;
+  background: black;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__burger.open {   /* Menu button transfromation */
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  background: transparent;
+}
+
+.menu-btn__burger.open::before {
+  -webkit-transform: rotate(45deg) translate(5px, 8px);
+  -ms-transform: rotate(45deg) translate(5px, 8px);
+          transform: rotate(45deg) translate(5px, 8px);
+}
+
+.menu-btn__burger.open::after {
+  width: 28px;
+  -webkit-transform: rotate(-45deg) translate(3px, -7px);
+  -ms-transform: rotate(-45deg) translate(3px, -7px);
+          transform: rotate(-45deg) translate(3px, -7px);
+}
+
+.nav {
+  position: fixed;
+  /* margin-top: 20px; */
+  /* background: black; */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  /* height: 9vh;  */
+  opacity: 0.98;
+  visibility: hidden;
+} 
+
+.nav.open {
+  /* margin-top: 10vh; */
+  visibility: visible;
+  /* background: white; */
+}
+
+ .nav .menu-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+   
+   margin-top: 8vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 40vh;
+  overflow: hidden;
+  background: white;
+  list-style-type: none;
+  padding-right: 1rem;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+ .nav .menu-nav.open {
+  -webkit-transform: translateY(0); 
+          transform: translateY(0);
+} 
+
+ .menu-nav__item {
+  
+  /* -webkit-transform: translateX(100vw); 
+          transform: translateX(100vw); */
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+} 
+
+ .menu-nav__item.open {
+  border-width: thick;
+  border-color: red;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+/* .nav .menu-nav__item.active > a {
+  color: #ff652f;
+} */
+
+.nav .menu-nav__link {
+  display: inline-block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 2rem 0;
+  font-weight: 300;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav .menu-nav__link:hover {
+  color: #ff652f;
+}
+
+/* .navmenus {
+  display: inline-flex;
+
+  padding-bottom: 10px; 
+}
+
+.navmenuitems {
+  display: inline-flex;
+  width: 87%;
+  padding: 10px;
+  text-decoration: none; 
+}
+
+.navmenus span {
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  font-family: fantasy;
+}
+/* Style the button that is used to open and close the collapsible content */
+ /* .collapsiblee {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+.collapsiblee:hover {
+  background-color: #eee;
+  color: red;
+  cursor: pointer;
+  padding: 0px;
+  display: inline;
+  border: none;
+  text-align: right;
+  outline: none;
+  font-size: 0px;
+}  */
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+/* .active, .collapsiblee:hover {
+  background-color: #ccc;
+} */
+
+/* Style the collapsible content. Note: hidden by default */
+/* .contentt {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: red;
+}
+
+.containerr {
+  display: inline-block;
+  cursor: pointer;
+}
+.containerr {
+  display: inline-block;
+  cursor: pointer;
+  color: red;
+}
+
+.bar1 .bar2 .bar3:hover {
+   color: red;
+}
+.bar1  {
+  width: 35px;
+  height: 4px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+ .bar2 {
+  width: 35px;
+  height: 4px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.bar3 {
+  width: 35px;
+  height: 4px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+} */
+
+/* Rotate first bar */
+/* .change .bar1 {
+  -webkit-transform: rotate(-360deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+/* .change .bar2 {
+  opacity: 0;
+} */
+
+/* Rotate last bar */
+/* .change .bar3 {
+  -webkit-transform: rotate(360deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}  */
+
+/* kdropdown menu */
+
+/* .xdropdown {
+   border-width: 10px ;
+   border-radius: 5px;
+   border-color: white;
+   margin-top: 10px;
+   margin-bottom: 10px;
+
+} */ 
+
+/*           de-Footer
+ **************************************** */
+ footer {
+  background-color:#292c2f;
+  box-shadow:0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing:border-box;
+  width:100%;
+  text-align:left;
+  font:bold 16px sans-serif;
+  padding:55px 50px;
+  bottom:0;
+  color:#fff;
+}
+
+.footer-navigation h3 {
+  margin:0;
+  font:normal 36px Cookie, cursive;
+  margin-bottom:20px;
+  color:#fff;
+}
+
+.footer-navigation h3 a {
+  text-decoration:none;
+  color:#fff;
+}
+
+.footer-navigation h3 span {
+  color:#5383d3;
+}
+
+.footer-navigation p.links a {
+  color:#fff;
+  text-decoration:none;
+}
+
+.footer-navigation p.company-name {
+  color:#8f9296;
+  font-size:14px;
+  font-weight:normal;
+  margin-top:20px;
+}
+
+@media (max-width:767px) {
+  .footer-contacts {
+    margin:30px 0;
+  }
+}
+
+.footer-contacts p {
+  display:inline-block;
+  color:#ffffff;
+  vertical-align:middle;
+}
+
+.footer-contacts p a {
+  color:#5383d3;
+  text-decoration:none;
+}
+
+.fa.footer-contacts-icon {
+  background-color:#33383b;
+  color:#fff;
+  font-size:18px;
+  width:38px;
+  height:38px;
+  border-radius:50%;
+  text-align:center;
+  line-height:38px;
+  margin:10px 15px 10px 0;
+}
+
+span.new-line-span {
+  display:block;
+  font-weight:normal;
+  display:block;
+  font-weight:normal;
+  font-size:14px;
+  line-height:2;
+}
+
+.footer-about h4 {
+  display:block;
+  color:#fff;
+  font-size:14px;
+  font-weight:bold;
+  margin-bottom:20px;
+}
+
+.footer-about p {
+  line-height:20px;
+  color:#92999f;
+  font-size:13px;
+  font-weight:normal;
+  margin:0;
+}
+
+div.social-links {
+  margin-top:20px;
+  color:#fff;
+}
+
+.social-links a {
+  display:inline-block;
+  width:35px;
+  height:35px;
+  cursor:pointer;
+  background-color:#33383b;
+  border-radius:2px;
+  font-size:20px;
+  color:#ffffff;
+  text-align:center;
+  line-height:35px;
+  margin-right:5px;
+  margin-bottom:5px;
+}
