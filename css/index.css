@@ -91,6 +91,8 @@ h1 {
 
 /* Cursor */
 .txt-type > .txt {
+  font-family: cursive;
+  font-weight: 2px;
   border-right: 0.2rem solid rgb(255, 255, 255);
 }
 
@@ -175,6 +177,10 @@ h1 {
 .content {
   z-index: 2;
   text-align: left;
+}
+
+.content h1 {
+  font-size: 200%;
 }
 
 .btn {
