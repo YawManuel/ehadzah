@@ -4,6 +4,7 @@
 
 * {
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -15,16 +16,15 @@
 /* .dnav {
   visibility: visible;
   } */
-@media (min-width:368) {
+/* @media (min-width:368) {
   .navmenuitems {
     visibility: hidden;
     display: inline-flex;
     height: 20px;
- 
     padding: 10px;
     text-decoration: none; 
   }     
-}
+} */
 
 @media (min-width:768px) {
   .navigation-clean {
@@ -39,9 +39,30 @@
     }
 }
 
+@media (max-width: 765px) {
+  .ynavitems {
+    visibility: hidden;
+  }
+}
+
 /* the whole navbar ( for both nav-menus and nav-collapse ) */
+.ynavig {
+ display:inline-block;
+ position: fixed;
+ height: 10vh;
+ width: 100%;
+  /* margin-left: 0px; */
+ margin-top: 0px;
+ z-index: 6;
+}
 
 .dnav {
+ display: grid;  
+ grid-gap: 10px;
+ padding: 0;
+ align-content: center;
+ list-style: none;
+ grid-template-columns: 1fr 3fr 1fr;
  z-index: 6; 
  position: fixed;
  background-color: rgb(255, 255, 255, 2);
@@ -49,21 +70,35 @@
  width: 100%;
  margin-top: 0px;
  margin-bottom: 20px;
- 
-} 
+}  
 
- .ynavig {
-  display:inline-block;
-  position: fixed;
-  background: blue;
-  height: 10vh;
-  width: 100%;
-  /* margin-left: 0px; */
-  margin-top: 0px;
-  z-index: 6;
-} 
+.yehadzah {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  align-content: left;
+  font-weight: bold;
+  margin: 10px; 
+  margin-bottom: 10px;
+  padding: 10px;
+  padding-bottom: 10px; 
+  color: red;
+}
 
-.menu-btn {
+.ynavitems {
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  margin-left: 10%; 
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.ynavlist {
+  font-weight: bold;
+  padding-left: 25px;
+}
+
+ .menu-btn {
   position: absolute;
   z-index: 8;
   right: 1rem;
@@ -72,8 +107,8 @@
   width: 28px;
   cursor: pointer;
   -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
+  transition: all 0.5s ease-in-out; 
+} 
 
 .menu-btn__burger {
   position: absolute;
@@ -211,128 +246,6 @@
   color: #ff652f;
 }
 
-/* .navmenus {
-  display: inline-flex;
-
-  padding-bottom: 10px; 
-}
-
-.navmenuitems {
-  display: inline-flex;
-  width: 87%;
-  padding: 10px;
-  text-decoration: none; 
-}
-
-.navmenus span {
-  color: red;
-  font-weight: bold;
-  cursor: pointer;
-  padding: 10px;
-  font-family: fantasy;
-}
-/* Style the button that is used to open and close the collapsible content */
- /* .collapsiblee {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
-.collapsiblee:hover {
-  background-color: #eee;
-  color: red;
-  cursor: pointer;
-  padding: 0px;
-  display: inline;
-  border: none;
-  text-align: right;
-  outline: none;
-  font-size: 0px;
-}  */
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-/* .active, .collapsiblee:hover {
-  background-color: #ccc;
-} */
-
-/* Style the collapsible content. Note: hidden by default */
-/* .contentt {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: red;
-}
-
-.containerr {
-  display: inline-block;
-  cursor: pointer;
-}
-.containerr {
-  display: inline-block;
-  cursor: pointer;
-  color: red;
-}
-
-.bar1 .bar2 .bar3:hover {
-   color: red;
-}
-.bar1  {
-  width: 35px;
-  height: 4px;
-  background-color: #333;
-  margin: 6px 0;
-  transition: 0.4s;
-}
-
- .bar2 {
-  width: 35px;
-  height: 4px;
-  background-color: #333;
-  margin: 6px 0;
-  transition: 0.4s;
-}
-
-.bar3 {
-  width: 35px;
-  height: 4px;
-  background-color: #333;
-  margin: 6px 0;
-  transition: 0.4s;
-} */
-
-/* Rotate first bar */
-/* .change .bar1 {
-  -webkit-transform: rotate(-360deg) translate(-9px, 6px) ;
-  transform: rotate(-45deg) translate(-9px, 6px) ;
-}
-
-/* Fade out the second bar */
-/* .change .bar2 {
-  opacity: 0;
-} */
-
-/* Rotate last bar */
-/* .change .bar3 {
-  -webkit-transform: rotate(360deg) translate(-8px, -8px) ;
-  transform: rotate(45deg) translate(-8px, -8px) ;
-}  */
-
-/* kdropdown menu */
-
-/* .xdropdown {
-   border-width: 10px ;
-   border-radius: 5px;
-   border-color: white;
-   margin-top: 10px;
-   margin-bottom: 10px;
-
-} */ 
-
 /*           de-Footer
  **************************************** */
  footer {
@@ -447,4 +360,15 @@ div.social-links {
   line-height:35px;
   margin-right:5px;
   margin-bottom:5px;
+}
+
+@media (min-width: 765px) {
+  .rowfooter {
+ display: grid;  
+ grid-gap: 25px;
+ padding: 0;
+ align-content: center;
+ list-style: none;
+ grid-template-columns: 1fr 1fr 1fr;
+  }
 }

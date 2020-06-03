@@ -41,27 +41,28 @@ h1 {
   height: 50vh;  /* "height: 100vh" will be used for the desktop backgrnd size  */
   
  }
- 
+/*  
  .intro {
    align-content: flex-start;
    margin-top: 15vh;
    margin-left: 5vh;
    color: goldenrod;
    text-size-adjust: 3px;
-   position: absolute;
- }
+   position: relative;
+ } */
 
  /* text animation 
  *************************************/
  .ytxtanimt {
   font-family: 'Raleway', sans-serif;
   height: 60vh;
-  background: #333 url('../assets/img/bricks.jpg') no-repeat center center / cover;
   color: white;
   margin-top: 4px;
   margin-bottom: 4px;
   box-shadow: aqua;
   overflow:hidden;
+  position: absolute;
+  /* Z-index: 15 */
 }
 
 .ytxtcontainer {
@@ -70,6 +71,7 @@ h1 {
   justify-content: center;
   height: 40vh;
   padding: 0 3rem;
+  /* z-index: 15; */
   /* background-image: url('../assets/img/devPic.jpg'); */
 }
 

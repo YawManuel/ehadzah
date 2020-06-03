@@ -5,22 +5,43 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ehadzah.com</title>
-    <!-- <link rel="stylesheet" href="packages/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
     <link rel="stylesheet" href="css/Article-Clean.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/de-General-Styles.css">
 </head>
 
-<body style="margin-bottom:0px;">
+<body>
 
     <!-- the navigation bar n -->
     <header class="ynavig">
         <div class="dnav">
-            <span class="">ehadzah</span>
+            <span class="yehadzah">ehadzah</span>
+            <div class="ynavitems">
+                <ul class="ynavitems">
+                    <li class="ynavlist">
+                        <a href="index.html" class="">
+                            APP
+                        </a>
+                    </li>
+                    <li class="ynavlist">
+                        <a href="about.html" class="">
+                            WEBSITE
+                        </a>
+                    </li>
+                    <li class="ynavlist">
+                        <a href="projects.html" class="">
+                            DATA
+                        </a>
+                    </li>
+                    <li class="ynavlist">
+                        <a href="./html/sfcsthtml/Cloud.html" class="">
+                            CLOUD
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <div class="menu-btn">
                 <span class="menu-btn__burger"></span>
             </div>
@@ -35,7 +56,7 @@
                 </li>
                 <li class="menu-nav__item">
                     <a href="about.html" class="menu-nav__link">
-                        BRAND
+                        DATA
                     </a>
                 </li>
                 <li class="menu-nav__item active">
@@ -44,7 +65,7 @@
                     </a>
                 </li>
                 <li class="menu-nav__item">
-                    <a href="../html/sfcsthtml/Cloud.html" class="menu-nav__link">
+                    <a href="./html/sfcsthtml/Cloud.html" class="menu-nav__link">
                         CLOUD
                     </a>
                 </li>
@@ -54,46 +75,42 @@
 
     <!-- the body section one -->
     <section class="imgbckgrnd">
-        <h1 class=" intro">Author Your Wonderful Idea</h1>
-        <p class="intro"><span class="by">by</span> <a href="#">ehadzah</a><span class="date">Writer(Poems & Codes)
-            </span></p>
-    </section>
-
-    <!-- the body section two (bricks) -->
-    <section class="ytxtanimt">
-        <img src="./assets/img/devPic.jpg" alt="">
-        <div class="ytxtcontainer">
-            <h1 class="ytxth1">
-                <span class="txt-type" data-wait="3000" data-words='["e-biz your business", "e-brand yourself"]'></span>
-            </h1>
-            <h2 class="ytxth2">@ ehadzah</h2>
-        </div>
+        <section class="ytxtanimt">
+            <div class="ytxtcontainer">
+                <h1 class="ytxth1">
+                    <span class="txt-type" data-wait="3000" data-words='["Author Your", "Wonderful Idea"]'></span>
+                </h1>
+                <h2 class="ytxth2">@ ehadzah</h2>
+            </div>
+        </section>
     </section>
 
     <!-- the body section three (bckgrnd video) -->
-
     <section class="showcase">
         <div class="video-container">
             <video src="assets/coverr-writer-laptop-work.mp4" autoplay muted loop></video>
         </div>
+
         <div class="content">
-            <h1>Shoot For The Stars</h1>
-            <P>Full screen video landing page</P>
+            <h1>ehadzah_notes</h1>
+            <P>notes from the tech-world</P>
             <a href="#about" class="btn">READ</a>
         </div>
     </section>
 
+    <!--   FOOTER
+    --------------------- -->
     <footer>
-        <div class="row">
-            <div class="col-sm-6 col-md-4 footer-navigation">
+        <div class="rowfooter">
+            <div class="footer-navigation">
                 <h3><a href="#">ehadzah</a></h3>
                 <p class="links"><a href="#">Web-Dev</a><strong> · </strong><a href="#">App-Dev</a><strong> ·
-                    </strong><a href="#">Brand-Design</a><strong> · </strong><a href="#">Cloud-Architech</a><strong>
+                    </strong><a href="#">Data-Architech</a><strong> · </strong><a href="#">Cloud-Architech</a><strong>
                         ·
                     </strong><a href="html/Contact-Us.html">Contact</a></p>
                 <p class="company-name">ehadzah © 2020 </p>
             </div>
-            <div class="col-sm-6 col-md-4 footer-contacts">
+            <div class="footer-contacts">
                 <div><span class="fa fa-map-marker footer-contacts-icon"> </span>
                     <p> Accra, Ghana</p>
                 </div>
@@ -101,27 +118,23 @@
                     <p class="footer-center-info email text-left"> +233 549 892349 || +233 505 458317</p>
                 </div>
                 <div><i class="fa fa-envelope footer-contacts-icon"></i>
-                    <p> <a href="#" target="_blank">support@company.com</a></p>
+                    <p> <a href="#" target="_blank">ehadzah@gmail.com</a></p>
                 </div>
             </div>
-            <div class="clearfix"></div>
-            <div class="col-md-4 footer-about">
-                <h4>About ehadzah</h4>
+            <!-- <div class="clearfix"></div> -->
+            <div class="footer-about">
+                <h4>About ehadzah:</h4>
                 <p> Writer, writes (poems & codes) </p>
-                <div class="social-links social-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i
-                            class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i
-                            class="fa fa-github"></i></a></div>
+                <div class="social-links social-icons"><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i
+                            class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-github"></i></a></div>
             </div>
         </div>
     </footer>
 
-    <!-- <script src="js/jquery.min.js"></script> -->
-    <!-- <script src="packages/js/bootstrap.min.js"></script> -->
+
     <script src="js/toggle.js"></script>
     <script src="js/tg.js"></script>
     <script src="js/txtanimt.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
-    <script src="js/Simple-Slider1.js"></script>
 
 </body>
 
