@@ -243,7 +243,11 @@
 }
 
 .nav .menu-nav__link:hover {
-  color: #ff652f;
+  color: red;
+}
+
+.menu-nav__link:hover {
+  color: red;
 }
 
 /*           de-Footer
