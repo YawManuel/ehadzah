@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+
+.mainpg {
+    background-image: url("../../assets/img/img-sfcst/DataPic.jpg");
+    width: 100%;
+    height: 80vh; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.yehadzah a {
+    color: red;
+}
