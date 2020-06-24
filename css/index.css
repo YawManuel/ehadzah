@@ -33,7 +33,6 @@ h1 {
   padding-top: 0vh;
   margin-top: 0vh;
   position: relative;
-
   background-size:cover;
   /* background-position-x: center;
   background-position-y: center; */
@@ -41,6 +40,31 @@ h1 {
   height: 50vh;  /* "height: 100vh" will be used for the desktop backgrnd size  */
   
  }
+
+ @media (min-width:768px) {
+  .imgbckgrnd {
+    /* color: rgba(0, 0, 0); */
+    background: var(--primary-color) url("../assets/img/beachCoding.jpg");
+    padding-top: 0vh;
+    margin-top: 0vh;
+    position: relative;
+    background-size:cover;
+    height: 100vh;
+  }
+
+  .blackgrnd {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+  }
+  /* .ytxtanimt {
+    margin-top: 60vh;
+  } */
+}
+
+.blackgrnd {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+}
 /*  
  .intro {
    align-content: flex-start;
@@ -54,7 +78,7 @@ h1 {
  /* text animation 
  *************************************/
  .ytxtanimt {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'sans-serif';
   height: 60vh;
   color: white;
   margin-top: 4px;
@@ -86,12 +110,13 @@ h1 {
 
 .ytxth2 {
   font-size: 2rem;
+  font-family: 'Lucida Sans';
   color: white;
 }
 
 /* Cursor */
 .txt-type > .txt {
-  font-family: cursive;
+  font-family: 'Lucida Sans';
   font-weight: 2px;
   border-right: 0.2rem solid rgb(255, 255, 255);
 }
@@ -161,6 +186,13 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   object-fit: cover;
+}
+
+.noteicons {
+ display: flex;
+ flex-direction: row;
+ /* padding: 20px; */
+ font-size: 4h;
 }
 
 .video-container:after {
