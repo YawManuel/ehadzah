@@ -11,7 +11,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  line-height: 1.5;
+  /* line-height: 1.5; */
 }
 
 a {
@@ -65,15 +65,6 @@ h1 {
   background-color: rgba(0, 0, 0, 0.5);
   height: 100vh;
 }
-/*  
- .intro {
-   align-content: flex-start;
-   margin-top: 15vh;
-   margin-left: 5vh;
-   color: goldenrod;
-   text-size-adjust: 3px;
-   position: relative;
- } */
 
  /* text animation 
  *************************************/

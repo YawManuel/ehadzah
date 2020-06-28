@@ -5,22 +5,15 @@
   }
   
   body {
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.5;
+    font-family: 'sans-serif';
+    /* line-height: 1.5; */
   }
   
   a {
     text-decoration: none;
     color: var(--primary-color);
   }
-
-.mainpg {
-    background-image: url("../../assets/img/img-sfcst/DataPic.jpg");
-    width: 100%;
-    height: 80vh; 
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+  
 
 .yehadzah a {
     color: red;
@@ -29,22 +22,62 @@
 /* read main body styles */
 
 .main-article {
-        display: grid;
-        grid-gap: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10%;
+        align-items: center;
         padding: 0;
+        /* z-index: 6; */
         list-style: none;
-        grid-template-rows: 3fr 2fr 1fr 6fr 1fr;
+}
+.article-img {
+/* height: 50vh;
+width: 80vh; */
+width: 100%;
+height: 80vh;
+margin-top: 0;
+padding: 0;
+}
+.main-article h4 {
+  margin: 5px;
+  padding: 0px;
 }
 
 .author-bio {
-
+height: 35px;
+display: flex;
+flex-direction: row;
+margin: 10px;
+padding: 0;
+/* flex-wrap: 20px; */
+}
+.author-bio img {
+  height: 35px;
+  border-radius: 15px;
+}
+.author-bio span {
+  font-family: 'Lucida Sans';
+  font-size: 10px;
+  margin-left: 2.5%;
+  margin-top: 2%; 
 }
 
-
 .main-content {
-
+font-family: lucida;
+/* font-size: 9px; */
+margin-left: 10px;
+margin-right: 10px;
+margin-top: 9px;
+padding: 0;
+}
+.main-content div {
+  margin-top: 4%;
 }
 
 .social-media-share {
-
+  height: 20%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: 9px;
 }
