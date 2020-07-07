@@ -25,3 +25,20 @@
 .yehadzah a {
     color: red;
 }
+
+@media(min-width: 760px){
+  .submainpg h2 {
+  font-size: 4rem;
+  }
+}
+.submainpg {
+padding-top: 5%;
+}
+.submainpg h2 {
+  color: white; 
+  font-family: lucida; 
+  font-size: 5vh;
+  margin-top: 20vh;
+  margin-left: 20%;
+  margin-right: 30%;
+  }

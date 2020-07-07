@@ -23,7 +23,42 @@
 }
 
 .infobox3 a {
-  display: block;
- margin-top: 62%;
- margin-left: 30%;
+ display: block;
+ width: 40%;
+ text-align: center;
+ text-decoration: underline;
+ font-size: 3vh;
+ margin-top: 17vh;
+ margin-left: 25%;
+ margin-right: 10%;
 }
+.aviewhover:hover {
+  color: red;
+}
+
+@media(max-width: 760px){
+  .infobox3 a {
+    margin-top: 23vh;
+    font-size: 2vh;
+  }
+}
+
+@media(min-width: 760px){
+  .submainpg h2 {
+  font-size: 4rem;
+  margin-top: 13vh;
+  }
+}
+
+.submainpg {
+padding-top: 5%;
+}
+
+.submainpg h2 {
+  color: white; 
+  font-family: lucida; 
+  font-size: 5vh;
+  margin-top: 18vh;
+  margin-left: 20%;
+  margin-right: 30%;
+  }
