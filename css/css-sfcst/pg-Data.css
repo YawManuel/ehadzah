@@ -22,12 +22,16 @@
   background-image: url("../../assets/img/img-sfcst/DataPic.jpg");
 }
 
+.infobox1, .infobox2, .infobox3 {
+  line-height: 1.5;
+}
+
 .infobox3 a {
  display: block;
  width: 40%;
  text-align: center;
  text-decoration: underline;
- font-size: 3vh;
+ font-size: 7vh;
  margin-top: 17vh;
  margin-left: 25%;
  margin-right: 10%;
@@ -38,8 +42,8 @@
 
 @media(max-width: 760px){
   .infobox3 a {
-    margin-top: 23vh;
-    font-size: 2vh;
+    margin-top: 16vh;
+    font-size: 3vh;
   }
 }
 
