@@ -32,9 +32,8 @@
  text-align: center;
  text-decoration: underline;
  font-size: 4vh;
- margin-top: 17vh;
- margin-left: 25%;
- margin-right: 10%;
+ margin: 0 auto;
+  margin-top: 13vh;
 }
 .aviewhover:hover {
   color: red;

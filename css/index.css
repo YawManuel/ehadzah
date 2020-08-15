@@ -28,19 +28,19 @@ h1 {
 /* bckgrnd pic & it's foregrbd text
 ************************************ */
 .imgbckgrnd {
-  background-image: url("../assets/img/beachCoding.jpg");
+  background-image: url("../assets/img/beachCoding2.jpg");
   padding-top: 0vh;
   margin-top: 0vh;
   position: relative;
   background-size:cover;
   background-repeat: no-repeat;
-  height: 50vh;  /* "height: 100vh" will be used for the desktop backgrnd size  */
+  height: 300px  /* "height: 100vh" will be used for the desktop backgrnd size  */
   
  }
 
  @media (min-width:768px) {
   .imgbckgrnd {
-    background: var(--primary-color) url("../assets/img/beachCoding.jpg");
+    background: var(--primary-color) url("../assets/img/beachCoding2.jpg");
     padding-top: 0vh;
     margin-top: 0vh;
     position: relative;
@@ -55,7 +55,7 @@ h1 {
 }
 
 .blackgrnd {
-  /* background-color: rgba(0, 0, 0, 0.5); */
+  background-color: rgba(0, 0, 0, 0.5);
   height: 100vh;
 }
 
