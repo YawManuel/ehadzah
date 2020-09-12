@@ -1,0 +1,156 @@
+/* the slideshow style 
+************************************ */
+.slideshow-container {
+    max-width: 1000px;
+    height: auto;
+    position: relative;
+    margin: auto;
+    background-color: #292c2f;
+    
+}
+
+.mySlides {
+  display: none;
+  height: 400px;
+}
+
+.mySlides img {
+  height: 400px;
+}
+
+.prev,
+.next {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: red;
+    background-color: #292c2f;
+    font-weight: bold;
+    font-size: 30px;
+    transition: .6s ease;
+    border-radius: 70%;
+}
+
+.next {
+    right: 10px;
+    /* border-radius: 3px 3px 3px 3px */
+}
+
+.prev {
+    left: 10px;
+    /* border-radius: 3px 3px 3px 3px */
+}
+
+.prev:hover,
+.next:hover {
+    color: red;
+    background-color: #292c2f;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 25px;
+    align-content: center;
+    padding-left: 10%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 200px;
+    width: 80%;
+    text-align: center;
+    /* background-color: #222428 */
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0
+}
+
+.dot {
+    cursor: pointer;
+    position: relative;
+    height: 15px;
+    width: 15px;
+    bottom: 50px;
+    margin: 0;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color .6s ease
+}
+
+.active,
+.dot:hover {
+    background-color: #292c2f;
+}
+
+/* Section one style
+************************************ */
+.spanhr {
+    /* display: block; */
+    font-size: 0px;
+    margin-top: 10px;
+    margin-bottom: 20;
+    margin-right: 200px;
+    margin-left: 10px;
+}
+hr {
+    /* display: inline; */
+    background-color: solid 1px red;
+    z-index: 20;
+    /* float: right; */
+    /* width: auto; */
+    margin-top: 10px;
+    margin-right: 10%;
+    margin-left: 10%; 
+}
+
+.yartrend {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0;
+    margin-bottom: 5%;
+    align-items: center;
+    padding: 0;
+}
+.yartrend a {
+    display: block;
+    margin-top: 10px;
+}
+.yartrend figure {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: nowrap;
+}
+.yartrend img {
+    width: 20vh;
+    height: 30vh;
+    margin-top: 0;
+    padding: 0;
+}
+.yartrend h2 {
+    height: 30vh;
+    font-size: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+    /* padding: 0; */
+}
+
+@media(min-width: 720px){
+.yartrend {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.yartrend img {
+    width: 30%;
+}
+.yartrend h2 {
+    font-size: 170%;
+}
+}

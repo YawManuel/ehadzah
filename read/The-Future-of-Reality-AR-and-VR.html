@@ -3,7 +3,7 @@
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171994249-1"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171994249-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -11,22 +11,66 @@
 
         gtag('config', 'UA-171994249-1');
     </script>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const hamburger = document.querySelector('.menu-btn__burger');
+        const nav = document.querySelector('.nav');
+        const menuNav = document.querySelector('.menu-nav');
+        const navItems = document.querySelectorAll('.menu-nav__item');
+
+        let showMenu = false;
+
+        menuBtn.addEventListener('click', toggleMenu);
+
+        function toggleMenu() {
+            if (!showMenu) {
+                hamburger.classList.add('open');
+                nav.classList.add('open');
+                menuNav.classList.add('open');
+                navItems.forEach(item => item.classList.add('open'));
+
+                showMenu = true;
+            } else {
+                hamburger.classList.remove('open');
+                nav.classList.remove('open');
+                menuNav.classList.remove('open');
+                navItems.forEach(item => item.classList.remove('open'));
+
+                showMenu = false;
+            }
+        }
+    </script> -->
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <title>ehadzah.com | Read</title>
+
+    <script type="text/javascript"
+        src="https://platform-api.sharethis.com/js/sharethis.js#property=5f5ae95920b0ff0012b0a3d3&product=sticky-share-buttons"
+        async="async"></script>
+    <meta property="og:title" content="European Travel Destinations">
+    <meta property="og:description" content="Offering tour packages for individuals or groups.">
+    <meta property="og:image" content="http://euro-travel-example.com/thumbnail.jpg">
+    <meta property="og:url" content="http://euro-travel-example.com/index.htm">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="Read" content="Read live science, technology and business blogs at ehadzah">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="canonical" href="https://ehadzah.com/read">
-    <link rel="icon" type="image/png" href="assets/ehadzahFavicon.png">
-    <link rel="stylesheet" href="css/css-read/pg-Read.css">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="../../css/css-sfcst/pg-Read.css">
-    <link rel="stylesheet" href="css/de-General-Styles.css">
+    <link rel="icon" type="image/png" href="../assets/ehadzahFavicon.png">
+    <link rel="stylesheet" href="../css/css-read/pg-Read.css">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="../../css/css-sfcst/pg-Read.css"> -->
+    <link rel="stylesheet" href="../css/de-General-Styles.css">
 </head>
 
 <body>
+    <div id="vueheader">
+        <!-- <vuereadhead v-for="toggle"></vuereadhead> -->
+        <vuereadhead></vuereadhead>
+    </div>
 
     <!-- the navigation bar n -->
-    <header class="ynavig">
+    <!-- <header class="ynavig">
         <div class="dnav">
             <span class="yehadzah"><a href="index.html">ehadzah</a></span>
             <div class="ynavitems">
@@ -87,18 +131,18 @@
                 </li>
             </ul>
         </nav>
-    </header>
+    </header> -->
 
     <!-- Article head -->
     <article class="main-article">
-        <img src="./assets/img/img-read/realitypic.jpg" alt="" class="article-img">
+        <img src="../assets/img/img-read/realitypic.jpg" alt="" class="article-img">
 
         <h3>
             The Future of Reality: AR and VR
         </h3>
 
         <div class="author-bio">
-            <img src="assets/img/img-read/AuthorBioPic.jpg" alt=""> <span>Author: Hadzah, Emmanuel. 27th June,
+            <img src="../assets/img/img-read/AuthorBioPic.jpg" alt=""> <span>Author: Hadzah, Emmanuel. 27th June,
                 2020.</span>
         </div>
 
@@ -153,53 +197,35 @@
             are going to create? A whole lot of business models to be discovered in this AR and VR space. <br>
 
         </article>
-        <span class="social-media-share">
 
 
-        </span>
     </article>
 
-    <!-- the footer  -->
-    <footer>
-        <div class="rowfooter">
-            <div class="footer-navigation">
-                <h3><a href="#">ehadzah</a></h3>
-                <p class="links"><a href="#">Web-Dev</a><strong> · </strong><a href="#">App-Dev</a><strong> ·
-                    </strong><a href="#">Data-Hawk</a><strong>
-                        ·
-                    </strong><a href="">Cloud-Architech</a></p>
-                <p class="company-name">ehadzah © 2020 </p>
-            </div>
-            <div class="footer-contacts">
-                <div><span class="fa fa-map-marker footer-contacts-icon"> </span>
-                    <p> Accra, Ghana</p>
-                </div>
-                <div><i class="fa fa-phone footer-contacts-icon"></i>
-                    <p class="footer-center-info email text-left">
-                        <a href="tel: +233 50 545 8317 ">+233 50 545 8317</a> | <a href="tel:+233 54 989 2349">+233 54
-                            989 2349</a>
-                    </p>
-                </div>
-                <div><i class="fa fa-envelope footer-contacts-icon"></i>
-                    <p> <a href="mailto: ehadzah@gmail.com" target="_blank">ehadzah@gmail.com</a></p>
-                </div>
-            </div>
-            <!-- <div class="clearfix"></div> -->
-            <div class="footer-about">
-                <h4>About ehadzah:</h4>
-                <p> Writer(poems & codes) | Web & App developer | Data analysis | Cloud engineeer </p>
-                <div class="social-links social-icons"><a href="https://twitter.com/Yawfestive"><i
-                            class="fa fa-twitter"></i></a>
-
-                    <a href="https://linkedin.com/in/hadzah-emmanuel-351843116" rel="nofollow"><i
-                            class="fa fa-linkedin"></i></a>
-                    <a href="https://github.com/yawmanuel" rel="nofollow"><i class="fa fa-github"></i></a></div>
+    <div class="social-media-share">
+        <div class="btn_wrap">
+            <span>Share</span>
+            <div class="contai">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
+                    data-show-count="false">Tweet</a>
 
             </div>
         </div>
-    </footer>
+    </div>
 
-    <script src="js/toggle.js"></script>
+
+    <!-- the footer  -->
+    <div id="vuefooter">
+        <vuereadfooter></vuereadfooter>
+    </div>
+
+
+    <script src="../js/toggle.js"></script>
+    <script src="../vue/vuereadhead.js"></script>
+    <script src="../vue/vuereadothers.js"></script>
+    <script src="../vue/vuereadfooter.js"></script>
 
 </body>
 
