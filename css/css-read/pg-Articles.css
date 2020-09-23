@@ -1,3 +1,25 @@
+
+* {
+    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */
+  }
+  
+  body {
+    font-family: 'sans-serif';
+    /* line-height: 1.5; */
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  
+
+.yehadzah a {
+    color: red;
+}
+
 /* the slideshow style 
 ************************************ */
 .slideshow-container {
@@ -51,6 +73,13 @@
     background-color: #292c2f;
 }
 
+.divtxt {
+    position: absolute;
+    z-index: 20;
+    height: 400px;
+    width: auto;
+    background-color: rgba(000, 000, 000);
+}
 .text {
     color: #f2f2f2;
     font-size: 25px;
@@ -88,15 +117,16 @@
 .active,
 .dot:hover {
     background-color: #292c2f;
+
 }
 
 /* Section one style
 ************************************ */
 .spanhr {
     /* display: block; */
-    font-size: 0px;
+    /* font-size: 0px; */
     margin-top: 10px;
-    margin-bottom: 20;
+    margin-bottom: 5;
     margin-right: 200px;
     margin-left: 10px;
 }

@@ -1,67 +1,69 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: 'Open Sans', sans-serif;
-    /* line-height: 1.5; */
-  }
-  
-  a {
-    text-decoration: none;
-    color: var(--primary-color);
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  /* line-height: 1.5; */
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
 
 .yehadzah a {
-    color: red;
+  color: red;
 }
 
 .mainpg {
   background-image: url("../../assets/img/img-sfcst/DataPic.jpg");
 }
 
-.infobox1, .infobox2, .infobox3 {
+.infobox1,
+.infobox2,
+.infobox3 {
   line-height: 1.5;
 }
 
 .infobox3 a {
- display: block;
- width: 40%;
- text-align: center;
- text-decoration: underline;
- font-size: 4vh;
- margin: 0 auto;
+  display: block;
+  width: 40%;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 4vh;
+  margin: 0 auto;
   margin-top: 13vh;
 }
 .aviewhover:hover {
   color: red;
 }
 
-@media(max-width: 760px){
+@media (max-width: 760px) {
   .infobox3 a {
     margin-top: 16vh;
     font-size: 3vh;
   }
 }
 
-@media(min-width: 760px){
+@media (min-width: 760px) {
   .submainpg h2 {
-  font-size: 4rem;
-  margin-top: 13vh;
+    font-size: 4rem;
+    margin-top: 13vh;
   }
 }
 
 .submainpg {
-padding-top: 5%;
+  padding-top: 5%;
 }
 
 .submainpg h2 {
-  color: white; 
-  font-family: lucida; 
+  color: white;
+  font-family: lucida;
   font-size: 5vh;
   margin-top: 18vh;
   margin-left: 20%;
   margin-right: 30%;
-  }
+}
