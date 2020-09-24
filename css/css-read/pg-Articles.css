@@ -52,19 +52,17 @@
     color: red;
     background-color: #292c2f;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 15px;
     transition: .6s ease;
-    border-radius: 70%;
+    border-radius: 100%;
 }
 
 .next {
     right: 10px;
-    /* border-radius: 3px 3px 3px 3px */
 }
 
 .prev {
     left: 10px;
-    /* border-radius: 3px 3px 3px 3px */
 }
 
 .prev:hover,
@@ -160,7 +158,7 @@ hr {
 }
 .yartrend img {
     width: 20vh;
-    height: 30vh;
+    height: 20vh;
     margin-top: 0;
     padding: 0;
 }
