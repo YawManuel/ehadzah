@@ -16,7 +16,9 @@
     <meta name="Cloud" content="We help extend your business computing power into the clouds at ehadzah">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
     <link rel="canonical" href="https://ehadzah.com/html/cloud">
     <link rel="icon" type="image/png" href="./assets/ehadzahFavicon.png">
     <link rel="stylesheet" href="./assets/fonts/font-awesome.min.css">
@@ -47,11 +49,14 @@
                         </a>
                     </li>
                     <li class="ynavlist">
-                        <a href="./read/The-New-Brains-of-Science-and-Maths-NSMQ-2020.html" class="menu-nav__link">
-                            Read
+                        <!-- <div id="vuelink">
+                            <vuereadlink class="menu-nav__link">Read</vuereadlink>
+                          </div> -->
+                        <a href="./read/The-New-Apples-From-Steve-Jobs-Farm.html" class="menu-nav__link">
+                          Read
                         </a>
                     </li>
-                     <li class="ynavlist">
+                    <li class="ynavlist">
                         <a href="./read/Blog.html" class="menu-nav__link">
                             <span style="color: red">More</span> Read
                         </a>
@@ -82,9 +87,9 @@
                     </a>
                 </li>
                 <li class="menu-nav__item navspace">
-                    <a href="./read/The-New-Brains-of-Science-and-Maths-NSMQ-2020.html" class="menu-nav__link">
-                        Read
-                    </a>
+                    <div id="vuelink">
+                        <vuereadlink class="menu-nav__link">Read</vuereadlink>
+                    </div>
                 </li>
                 <li class="menu-nav__item active navspace">
                     <a href="./read/Blog.html" class="menu-nav__link">
@@ -130,7 +135,7 @@
             <h3> Cloud Engineering </h3>
             <p> We serve as your Cloud Engineer and build these cloud services for your online shop,
                 hospital, school, community, personal data, your idea, businesses.
-                And give you a collection of pre-packaged IT solutions, softwares or dashboards 
+                And give you a collection of pre-packaged IT solutions, softwares or dashboards
                 for you to easily interupt with your Cloud computer.
             </p>
         </div>
@@ -168,14 +173,16 @@
                 <div class="social-links social-icons"><a href="https://twitter.com/Yawfestive"><i
                             class="fa fa-twitter"></i></a>
 
-                    <a href="https://linkedin.com/in/hadzah-emmanuel-351843116"rel="nofollow"><i class="fa fa-linkedin"></i></a><a
-                        href="https://github.com/yawmanuel" rel="nofollow"><i class="fa fa-github"></i></a></div>
+                    <a href="https://linkedin.com/in/hadzah-emmanuel-351843116" rel="nofollow"><i
+                            class="fa fa-linkedin"></i></a><a href="https://github.com/yawmanuel" rel="nofollow"><i
+                            class="fa fa-github"></i></a></div>
 
             </div>
         </div>
     </footer>
 
     <script src="./js/toggle.js"></script>
+    <script src="./vue/vuereadlink.js"></script>
 
 </body>
 
