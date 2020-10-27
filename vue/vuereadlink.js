@@ -1,6 +1,6 @@
 Vue.component('vuereadlink', {
     template: 
-    `<a href="./read/The-New-Apples-From-Steve-Jobs-Farm.html"> Read </a>`    
+    `<a href="./read/Keeping-Up-With-The-New-Apples-From-Steve-Jobs-Farm.html"> Read </a>`    
 });
 
 new Vue({
