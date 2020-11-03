@@ -1,8 +1,7 @@
 Vue.component('vuetopread', {
     template: 
-    `<div class="spanhr">TOP READ</div> <hr>
-
-<article class="yartrend">
+    `<article class="yartrend">
+    <div class="spanhr">TOP READ</div> <hr>
 
 <a href="../read/The-Future-of-Reality-AR-and-VR.html" margin-top="0">
     <figure>
@@ -15,7 +14,8 @@ Vue.component('vuetopread', {
         <Img src="../assets/img/img-read/starlinkmainpic.jpg"/>
         <h2>The New Internet: Starlink, connecting the stars</h2>
     </figure>
-</a>`
+</a>
+</article>`
 });
 
 new Vue({
