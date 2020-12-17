@@ -12,24 +12,16 @@
         gtag('config', 'UA-171994249-1');
     </script>
 
-    <!-- <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
-
-
-    <!-- <script type="text/javascript"
-        src="https://platform-api.sharethis.com/js/sharethis.js#property=5f5ae95920b0ff0012b0a3d3&product=sticky-share-buttons"
-        async="async">
-        </script> -->
     <script type="text/javascript"
         src="https://platform-api.sharethis.com/js/sharethis.js#property=5f6c14cf86d2b30012e1765a&product=sticky-share-buttons"
         async="async"></script>
 
     <meta property="og:title" content="The Future of Reality: AR and VR">
-    <meta property="og:description"content="Augmented Reality and Virtual Reality technologies disrupts Real-World Reality">
+    <meta property="og:description"
+        content="Augmented Reality and Virtual Reality technologies disrupts Real-World Reality">
     <meta property="og:image" content="https://ehadzah.com/assets/img/img-read/realitypic.jpg">
     <meta property="og:url" content="https://ehadzah.com/read/The-Future-of-Reality-AR-and-VR.html">
     <meta name="twitter:card" content="summary_large_image">
-    <!-- <meta name="twitter:site" content="@yawfestive">
-    <meta name="twitter:url" content="https://ehadzah.com/read/The-Future-of-Reality-AR-and-VR.html"> -->
     <meta name="Read" content="Read live science, technology and business blogs at ehadzah">
 
     <meta charset="UTF-8">
@@ -37,7 +29,7 @@
     <title>ehadzah.com | Read | The Future of Reality AR and VR.html </title>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    
+
     <link rel="canonical" href="https://ehadzah.com/read">
     <link rel="icon" type="image/png" href="../assets/ehadzahFavicon.png">
     <link rel="stylesheet" href="../css/css-read/pg-Read.css">
@@ -46,9 +38,6 @@
 </head>
 
 <body>
-    <!-- <div id="vueheader">
-        <vuereadhead></vuereadhead>
-    </div> -->
 
     <!-- the navigation bar n -->
     <header class="ynavig">
@@ -56,20 +45,28 @@
             <span class="yehadzah"><a href="../index.html">ehadzah</a></span>
             <div class="ynavitems">
                 <ul class="ynavitems">
-                    <li class="ynavlist">
-                        <a href="../App-&-Website.html" class="menu-nav__link">
-                            App-Website
-                        </a>
-                    </li>
-                    <li class="ynavlist"> <a href="../Data.html" class="menu-nav__link">
-                            Data
-                        </a>
-                    </li>
-                    <li class="ynavlist">
-                        <a href="../Cloud.html" class="menu-nav__link">
-                            Cloud
-                        </a>
-                    </li>
+                    <div class="droppdown  anchorlistyle3">
+
+                        <a href="" class=" ynavlist menu-nav__link anchorstyle2">Insights <i class="fa fa-caret-down"
+                                aria-hidden="true"></i></a>
+                        <div class="droppdown-content">
+                            <li class="ynavlist">
+                                <a href="../Dev.html" class="menu-nav__link">
+                                    Dev
+                                </a>
+                            </li>
+                            <li class="ynavlist"> <a href="../Data.html" class="menu-nav__link">
+                                    Data
+                                </a>
+                            </li>
+                            <li class="ynavlist">
+                                <a href="../AI.html" class="menu-nav__link">
+                                    AI
+                                </a>
+                            </li>
+                        </div>
+
+                    </div>
                     <li class="ynavlist">
                         <a href="../read/Blog.html" class="menu-nav__link">
                             <span style="color: red">More</span> Read
@@ -85,19 +82,22 @@
 
         <nav class="nav">
             <ul class="menu-nav">
-                <li class="menu-nav__item">
-                    <a href="../App-&-Website.html" class="menu-nav__link">
-                        App & Website
+                <a href="" class="insights">
+                    Insights:
+                </a>
+                <li class="menu-nav__item shift">
+                    <a href="../Dev.html" class="menu-nav__link">
+                        Dev
                     </a>
                 </li>
-                <li class="menu-nav__item navspace">
+                <li class="menu-nav__item shift navspace">
                     <a href="../Data.html" class="menu-nav__link">
                         Data
                     </a>
                 </li>
-                <li class="menu-nav__item navspace">
-                    <a href="../Cloud.html" class="menu-nav__link">
-                        Cloud
+                <li class="menu-nav__item shift active navspace">
+                    <a href="../AI.html" class="menu-nav__link">
+                        AI
                     </a>
                 </li>
                 <li class="menu-nav__item navspace">
@@ -178,23 +178,14 @@
             are going to create? A whole lot of business models to be discovered in this AR and VR space. <br>
 
         </article>
-
-
+        <div id="aboutauthor">
+            <vaboutauthors></vaboutauthors>
+        </div>
     </article>
 
-    <!-- <div class="social-media-share">
-        <div class="btn_wrap">
-            <span>Share</span>
-            <div class="contai">
-                <i class="fa fa-facebook"></i>
-                <i class="fa fa-twitter"></i>
-                <i class="fa fa-instagram"></i>
-                <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
-                    data-show-count="false">Tweet</a>
-
-            </div>
-        </div>
-    </div> -->
+    <div id="topread">
+        <vuetopread></vuetopread>
+    </div>
 
     <!-- the footer  -->
     <div id="vuefooter">
@@ -203,7 +194,8 @@
 
     <script src="../js/toggle.js"></script>
     <script src="../vue/vuereadhead.js"></script>
-    <script src="../vue/vuereadothers.js"></script>
+    <script src="../vue/vaboutauthors.js"></script>
+    <script src="../vue/vuetopread.js"></script>
     <script src="../vue/vuereadfooter.js"></script>
 
 </body>

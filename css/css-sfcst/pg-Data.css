@@ -24,8 +24,16 @@ a {
 
 .infobox1,
 .infobox2,
-.infobox3 {
+.infobox3 img {
   line-height: 1.5;
+}
+
+.infobox1 img {
+  align-self: auto;
+  width: 70%;
+  height: 50%; 
+  margin-top: 5%; 
+  margin-bottom: 5%; 
 }
 
 .infobox3 a {

@@ -7,7 +7,7 @@ Vue.component('vuereadfooter', {
                 <p class="links"><a href="#">Web-Dev</a><strong> · </strong><a href="#">App-Dev</a><strong> ·
                     </strong><a href="#">Data-Hawk</a><strong>
                         ·
-                    </strong><a href="">Cloud-Architech</a></p>
+                    </strong><a href="">AI-Architech</a></p>
                 <p class="company-name">ehadzah © 2020 </p>
             </div>
             <div class="footer-contacts">
@@ -27,7 +27,7 @@ Vue.component('vuereadfooter', {
             
             <div class="footer-about">
                 <h4>About ehadzah:</h4>
-                <p> Writer(poems & codes) | Web & App developer | Data analysis | Cloud engineeer </p>
+                <p> Writer(poems & codes) | Web & App developer | Data analysis | AI engineeer </p>
                 <div class="social-links social-icons"><a href="https://twitter.com/Yawfestive"><i
                             class="fa fa-twitter"></i></a>
 

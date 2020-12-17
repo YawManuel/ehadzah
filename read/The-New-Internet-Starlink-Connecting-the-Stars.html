@@ -19,15 +19,17 @@
         src="https://platform-api.sharethis.com/js/sharethis.js#property=5f6c14cf86d2b30012e1765a&product=sticky-share-buttons"
         async="async"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
     <meta property="og:title" content="The New Internet: Starlink Connecting the Stars">
-    <meta property="og:description" content="Satellite broadband (Starlink) to connect the unlucky stars to the internet">
+    <meta property="og:description"
+        content="Satellite broadband (Starlink) to connect the unlucky stars to the internet">
     <meta property="og:image" content="https://ehadzah.com/assets/img/img-read/starlinkmainpic.jpg">
     <meta property="og:url" content="https://ehadzah.com/read/The-New-Internet-Starlink-Connecting-the-Stars.html">
     <meta name="twitter:card" content="summary_large_image">
 
     <meta charset=" UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <title>ehadzah.com | Read | The New Internet: Starlink Connecting the Stars.html </title>
     <meta name="Read"
         content="Read live science, technology and business blogs at ehadzah, satellite, starlink, Elon Musk">
@@ -37,6 +39,7 @@
     <link rel="stylesheet" href="../css/css-read/pg-Read.css">
     <link rel="stylesheet" href="../assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="../css/de-General-Styles.css">
+     <link rel="stylesheet" href="../css/css-read/pg-Articles.css">
 </head>
 
 <body>
@@ -50,20 +53,28 @@
             <span class="yehadzah"><a href="../index.html">ehadzah</a></span>
             <div class="ynavitems">
                 <ul class="ynavitems">
-                    <li class="ynavlist">
-                        <a href="../App-&-Website.html" class="menu-nav__link">
-                            App-Website
-                        </a>
-                    </li>
-                    <li class="ynavlist"> <a href="../Data.html" class="menu-nav__link">
-                            Data
-                        </a>
-                    </li>
-                    <li class="ynavlist">
-                        <a href="../Cloud.html" class="menu-nav__link">
-                            Cloud
-                        </a>
-                    </li>
+                   <div class="droppdown  anchorlistyle3">
+
+                        <a href="" class=" ynavlist menu-nav__link anchorstyle2">Insights <i class="fa fa-caret-down"
+                                aria-hidden="true"></i></a>
+                        <div class="droppdown-content">
+                            <li class="ynavlist">
+                                <a href="../Dev.html" class="menu-nav__link">
+                                    Dev
+                                </a>
+                            </li>
+                            <li class="ynavlist"> <a href="../Data.html" class="menu-nav__link">
+                                    Data
+                                </a>
+                            </li>
+                            <li class="ynavlist">
+                                <a href="../AI.html" class="menu-nav__link">
+                                    AI
+                                </a>
+                            </li>
+                        </div>
+
+                    </div>
                     <li class="ynavlist">
                         <a href="../read/Blog.html" class="menu-nav__link">
                             <span style="color: red">More</span> Read
@@ -79,19 +90,22 @@
 
         <nav class="nav">
             <ul class="menu-nav">
-                <li class="menu-nav__item">
-                    <a href="../App-&-Website.html" class="menu-nav__link">
-                        App & Website
+                <a href="" class="insights">
+                    Insights:
+                </a>
+                <li class="menu-nav__item shift">
+                    <a href="../Dev.html" class="menu-nav__link">
+                        Dev
                     </a>
                 </li>
-                <li class="menu-nav__item navspace">
+                <li class="menu-nav__item shift navspace">
                     <a href="../Data.html" class="menu-nav__link">
                         Data
                     </a>
                 </li>
-                <li class="menu-nav__item navspace">
-                    <a href="../Cloud.html" class="menu-nav__link">
-                        Cloud
+                <li class="menu-nav__item shift navspace">
+                    <a href="../AI.html" class="menu-nav__link">
+                        AI
                     </a>
                 </li>
                 <li class="menu-nav__item navspace">
@@ -176,33 +190,24 @@
 
         </article>
 
-
+        <div id="aboutauthor">
+            <aboutauthor></aboutauthor>
+        </div>
     </article>
 
-    <!-- <div class="social-media-share">
-        <div class="btn_wrap">
-            <span>Share</span>
-            <div class="contai">
-                <i class="fa fa-facebook"></i>
-                <i class="fa fa-twitter"></i>
-                <i class="fa fa-instagram"></i>
-                <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
-                    data-show-count="false">Tweet</a>
-
-            </div>
-        </div>
-    </div> -->
-
+    <div id="topread">
+        <vuetopread></vuetopread>
+    </div>
 
     <!-- the footer  -->
     <div id="vuefooter">
         <vuereadfooter></vuereadfooter>
     </div>
 
-
     <script src="../js/toggle.js"></script>
     <script src="../vue/vuereadhead.js"></script>
-    <script src="../vue/vuereadothers.js"></script>
+    <script src="../vue/vaboutauthors.js"></script>
+    <script src="../vue/vuetopread.js"></script>
     <script src="../vue/vuereadfooter.js"></script>
 
 </body>

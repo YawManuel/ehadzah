@@ -1,13 +1,10 @@
 
 * {
     box-sizing: border-box;
-    /* margin: 0;
-    padding: 0; */
   }
   
   body {
     font-family: 'sans-serif';
-    /* line-height: 1.5; */
   }
   
   a {
@@ -74,11 +71,9 @@
 .divtxt {
     position: absolute;
     font-family: lucida;
-    /* z-index: 20; */
     height: 100px;
     margin: 10px;
     width: auto;
-    /* background-color: rgba(000, 000, 000, 0.5); */
 }
 .text {
     color: white;
@@ -91,7 +86,6 @@
     bottom: 200px;
     width: 80%;
     text-align: center;
-    /* background-color: #222428 */
 }
 
 .numbertext {
@@ -115,7 +109,6 @@
     transition: background-color .6s ease
 }
 
-.active,
 .dot:hover {
     background-color: #292c2f;
 
@@ -124,19 +117,14 @@
 /* Section one style
 ************************************ */
 .spanhr {
-    /* display: block; */
-    /* font-size: 0px; */
     margin-top: 10px;
     margin-bottom: 5;
     margin-right: 200px;
     margin-left: 10px;
 }
 hr {
-    /* display: inline; */
     background-color: solid 1px red;
     z-index: 20;
-    /* float: right; */
-    /* width: auto; */
     margin-top: 10px;
     margin-right: 10%;
     margin-left: 10%; 
@@ -170,18 +158,24 @@ hr {
     font-size: 100%;
     margin-top: 10px;
     margin-left: 10px;
-    /* padding: 0; */
 }
 
-@media(min-width: 720px){
+@media(min-width: 720px){  
 .yartrend {
     margin-left: 200px;
     margin-right: 200px;
 }
 .yartrend img {
-    width: 30%;
+    width: 35vh;
+    height: 35vh;
+    margin-top: 20px;
+    padding: 0;
 }
 .yartrend h2 {
     font-size: 5vh;
+}
+
+.spanhr {
+    margin-top: 30px;
 }
 }

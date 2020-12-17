@@ -11,11 +11,51 @@
 
 /* Mobile first */
 
+/* Dropdown Button */
+.anchorstyle {
+  background-color: #425AD2;
+  color: white;
+  font-size: 16px; 
+  border: none;
+
+
+}
+
+/* The container <div> - needed to position the dropdown content */
+.droppdown {
+  position: relative ;
+  display: inline;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.droppdown-content {
+  display: none;
+  position: absolute;
+  float: left;
+  background-color: white;
+  min-width: 170px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+
+/* Links inside the dropdown */
+.droppdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change colou on hover */
+.droppdown:hover .droppdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.droppdown:hover .anchorstyle {background-color: #425AD2;}
+
+
+
 /*                 de-Main-Navbar
 ********************************************************************* */
-/* .dnav {
-  visibility: visible;
-  } */
 @media (min-width:368px) {
   .navmenuitems {
     visibility: hidden;
@@ -45,7 +85,6 @@
   }
 
   .phonecall {
-    /* margin-top: 8vh; */
     visibility: hidden;
 
   }
@@ -67,7 +106,6 @@
  position: fixed;
  height: 10vh;
  width: 100%;
-/* margin-left: 0px; */
  margin-top: 0px;
  z-index: 6;
 }
@@ -182,20 +220,15 @@
 
 .nav {
   position: fixed;
-  /* margin-top: 20px; */
-  /* background: black; */
   top: 0;
   left: 0;
   width: 100vw;
-  /* height: 9vh;  */
   opacity: 0.98;
   visibility: hidden;
 } 
 
 .nav.open {
-  /* margin-top: 10vh; */
   visibility: visible;
-  /* background: white; */
 }
 
  .nav .menu-nav {
@@ -233,9 +266,6 @@
 } 
 
  .menu-nav__item {
-  
-  /* -webkit-transform: translateX(100vw); 
-          transform: translateX(100vw); */
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 } 
@@ -247,20 +277,27 @@
           transform: translateX(0);
 }
 
-/* .nav .menu-nav__item.active > a {
-  color: #ff652f;
-} */
-
 .nav .menu-nav__link {
   font-size: 1.2rem;
-  /* padding: 2rem 0; */
   margin-left: 20px;
   font-family: 'sans-serif';
   font-weight: 400;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
+.shift {
+  margin-left: 20px;
+  padding-bottom: 0px;
+}
 
+.insights {
+display: block;
+font-size: 1.2rem;
+font-family: 'sans-serif';
+font-weight: 400;
+margin-left: 20px;
+margin-bottom: 12px;
+}
 
 .navspace {
   padding-top: 1rem;
@@ -273,7 +310,7 @@
 
 .nav .menu-nav__link:hover {
   color: red;
-}
+} 
 
 .menu-nav__link:hover {
   color: red;
@@ -297,27 +334,21 @@ background-color: rgba(000, 000, 000, 0.5);
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-/* display: flex;
-flex-direction: column;
-margin-top: 17px; */
 }
 
 .infobox1, .infobox2, .infobox3 {
 height: 50vh;
-/* width: ; */
 margin: 10px;
 margin-top: 15px;
 padding: 10px;
 border-radius: 8px;
 box-shadow: -7px -7px aliceblue;
-/* border-left: 2px solid aliceblue; */
 border-right: 2px solid aliceblue;
 border-bottom: 2px solid aliceblue;
 }
 .mainpg1 p {
   align-items: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular';
-  /* font-size: ; */
   padding-left: 15px;
   padding-top: 30px;
 }

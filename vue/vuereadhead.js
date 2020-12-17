@@ -6,8 +6,8 @@ Vue.component('vuereadhead', {
             <div class="ynavitems">
                 <ul class="ynavitems">
                     <li class="ynavlist">
-                        <a href="../App-&-Website.html" class="menu-nav__link">
-                            App-Website
+                        <a href="../Dev.html" class="menu-nav__link">
+                            Dev
                         </a>
                     </li>
                     <li class="ynavlist"> <a href="../Data.html" class="menu-nav__link">
@@ -15,8 +15,8 @@ Vue.component('vuereadhead', {
                         </a>
                     </li>
                     <li class="ynavlist">
-                        <a href="../Cloud.html" class="menu-nav__link">
-                            Cloud
+                        <a href="../AI.html" class="menu-nav__link">
+                            AI
                         </a>
                     </li>
                     <li class="ynavlist">
@@ -35,8 +35,8 @@ Vue.component('vuereadhead', {
         <nav class="nav">
             <ul class="menu-nav">
                 <li class="menu-nav__item">
-                    <a href="../App-&-Website.html" class="menu-nav__link">
-                        App & Website
+                    <a href="../Dev.html" class="menu-nav__link">
+                        Dev
                     </a>
                 </li>
                 <li class="menu-nav__item navspace">
@@ -45,8 +45,8 @@ Vue.component('vuereadhead', {
                     </a>
                 </li>
                 <li class="menu-nav__item active navspace">
-                    <a href="../Cloud.html" class="menu-nav__link">
-                        Cloud
+                    <a href="../AI.html" class="menu-nav__link">
+                        AI
                     </a>
                 </li>
                 <li class="menu-nav__item navspace">
@@ -63,37 +63,38 @@ Vue.component('vuereadhead', {
         </nav>
     </header>`,
 
-    methods: {
-        toggle: function () {
-            const menuBtn = this.$refs.menu-btn;
-            const hamburger = this.$refs.menu-btn__burger;
-            const nav = this.$refs.nav;
-            const menuNav = this.$refs.menu-nav;
-            const navItems = thsi.$refs.menu-nav__item;
+    methods: { function () {
+           const menuBtn = document.querySelector('.menu-btn');
+const hamburger = document.querySelector('.menu-btn__burger');
+const nav = document.querySelector('.nav');
+const menuNav = document.querySelector('.menu-nav');
+const navItems = document.querySelectorAll('.menu-nav__item');
 
-            let showMenu = false;
+let showMenu = false;
 
-            menuBtn.addEventListener('click', toggleMenu);
+menuBtn.addEventListener('click', toggleMenu);
 
-            function toggleMenu() {
-                if (!showMenu) {
-                    hamburger.classList.add('open');
-                    nav.classList.add('open');
-                    menuNav.classList.add('open');
-                    navItems.forEach(item => item.classList.add('open'));
+function toggleMenu() {
+  if(!showMenu) {
+    hamburger.classList.add('open');
+    nav.classList.add('open');
+    menuNav.classList.add('open');
+    navItems.forEach(item => item.classList.add('open'));
 
-                    showMenu = true;
-                } else {
-                    hamburger.classList.remove('open');
-                    nav.classList.remove('open');
-                    menuNav.classList.remove('open');
-                    navItems.forEach(item => item.classList.remove('open'));
+    showMenu = true;
+  } else {
+    hamburger.classList.remove('open');
+    nav.classList.remove('open');
+    menuNav.classList.remove('open');
+    navItems.forEach(item => item.classList.remove('open'));
 
-                    showMenu = false;
-                }
-            }
-        }
+    showMenu = false;
+  }
+}
+
     }
+    }
+     
 });
 
 new Vue({

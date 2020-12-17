@@ -40,30 +40,39 @@
 </head>
 
 <body>
-    <!-- <div id="vueheader">
-        <vuereadhead></vuereadhead>
-    </div> -->
 
-    <!-- the navigation bar n -->
+    <!-- the header  -->
+    <!-- <div id="vueheader">
+       <vuereadhead></vuereadhead>
+    </div> -->
+    <!-- the navigation bar   -->
     <header class="ynavig">
         <div class="dnav">
             <span class="yehadzah"><a href="../index.html">ehadzah</a></span>
             <div class="ynavitems">
                 <ul class="ynavitems">
-                    <li class="ynavlist">
-                        <a href="../App-&-Website.html" class="menu-nav__link">
-                            App-Website
-                        </a>
-                    </li>
-                    <li class="ynavlist"> <a href="../Data.html" class="menu-nav__link">
-                            Data
-                        </a>
-                    </li>
-                    <li class="ynavlist">
-                        <a href="../Cloud.html" class="menu-nav__link">
-                            Cloud
-                        </a>
-                    </li>
+                    <div class="droppdown  anchorlistyle3">
+
+                        <a href="" class=" ynavlist menu-nav__link anchorstyle2">Insights <i class="fa fa-caret-down"
+                                aria-hidden="true"></i></a>
+                        <div class="droppdown-content">
+                            <li class="ynavlist">
+                                <a href="../Dev.html" class="menu-nav__link">
+                                    Dev
+                                </a>
+                            </li>
+                            <li class="ynavlist"> <a href="../Data.html" class="menu-nav__link">
+                                    Data
+                                </a>
+                            </li>
+                            <li class="ynavlist">
+                                <a href="../AI.html" class="menu-nav__link">
+                                    AI
+                                </a>
+                            </li>
+                        </div>
+
+                    </div>
                     <li class="ynavlist">
                         <a href="../read/Blog.html" class="menu-nav__link">
                             <span style="color: red">More</span> Read
@@ -79,19 +88,22 @@
 
         <nav class="nav">
             <ul class="menu-nav">
-                <li class="menu-nav__item">
-                    <a href="../App-&-Website.html" class="menu-nav__link">
-                        App & Website
+                <a href="" class="insights">
+                    Insights:
+                </a>
+                <li class="menu-nav__item shift">
+                    <a href="../Dev.html" class="menu-nav__link">
+                        Dev
                     </a>
                 </li>
-                <li class="menu-nav__item navspace">
+                <li class="menu-nav__item shift navspace">
                     <a href="../Data.html" class="menu-nav__link">
                         Data
                     </a>
                 </li>
-                <li class="menu-nav__item navspace">
-                    <a href="../Cloud.html" class="menu-nav__link">
-                        Cloud
+                <li class="menu-nav__item shift active navspace">
+                    <a href="../AI.html" class="menu-nav__link">
+                        AI
                     </a>
                 </li>
                 <li class="menu-nav__item navspace">
@@ -149,7 +161,7 @@
             max, measuring your blood oxygen and Also there is an Apple fitness plus work out to train with which is
             powered by Apple watch. Apple one, a new wrap up of services Apple provides which are being wrap up into one
             package for individual or family to subscribe to and use. The Apple one services include Apple tv plus,
-            Apple arcade, iCloud, Apple news, iTunes and Apple new service: Apple fitness plus. iPad has been the number
+            Apple arcade, iAI, Apple news, iTunes and Apple new service: Apple fitness plus. iPad has been the number
             one customer satisfaction in the tablet world since its launch a decade ago. The new iPad air has a 10.9
             liquid retina display, has a high performance due to its 5 nanometer A14 bionic, first in the industry to
             use a 5-nanometer technology. Also, the introduction of a USB-C to iPadAir for a 10x faster data
@@ -190,23 +202,11 @@
 
         </article>
 
-
     </article>
 
-    <!-- <div class="social-media-share">
-        <div class="btn_wrap">
-            <span>Share</span>
-            <div class="contai">
-                <i class="fa fa-facebook"></i>
-                <i class="fa fa-twitter"></i>
-                <i class="fa fa-instagram"></i>
-                <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
-                    data-show-count="false">Tweet</a>
-
-            </div>
-        </div>
-    </div> -->
-
+    <div id="topread">
+        <vuetopread></vuetopread>
+    </div>
 
     <!-- the footer  -->
     <div id="vuefooter">

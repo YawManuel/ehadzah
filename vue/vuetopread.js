@@ -1,9 +1,9 @@
 Vue.component('vuetopread', {
-    template: 
+    template:
     `<article class="yartrend">
     <div class="spanhr">TOP READ</div> <hr>
 
-<a href="../read/The-Future-of-Reality-AR-and-VR.html" margin-top="0">
+<a href="../read/The-Future-of-Reality-AR-and-VR.html">
     <figure>
         <Img src="../assets/img/img-read/realitypic.jpg"/>
         <h2>The Future of Reality: AR and VR</h2>
