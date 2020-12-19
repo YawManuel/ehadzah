@@ -287,6 +287,7 @@
 }
 .shift {
   margin-left: 20px;
+  /* padding-top: 1px; */
   padding-bottom: 0px;
 }
 
@@ -300,7 +301,7 @@ margin-bottom: 12px;
 }
 
 .navspace {
-  padding-top: 1rem;
+  padding-top: 0.7rem;
 }
 
  .callbutton {
