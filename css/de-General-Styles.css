@@ -288,7 +288,7 @@
 .shift {
   margin-left: 20px;
   /* padding-top: 1px; */
-  padding-bottom: 0px;
+  padding: 0px;
 }
 
 .insights {
@@ -301,7 +301,7 @@ margin-bottom: 12px;
 }
 
 .navspace {
-  padding-top: 0.7rem;
+  padding-top: 0.5rem;
 }
 
  .callbutton {

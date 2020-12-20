@@ -76,11 +76,15 @@ margin-top: 9px;
 padding: 0;
 }
 .main-content div {
-  margin-top: 4%;
+  margin-top: 5%;
 }
 .wordenlight {
-  color: rgb(94, 89, 161);
+  color: rgb(247, 55, 55);
   font-weight: bold;
+}
+figcaption {
+  font-style: italic;
+  font-size: 90%;
 }
 
 .spanhr {
