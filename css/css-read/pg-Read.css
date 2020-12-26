@@ -75,6 +75,18 @@ margin-right: 10px;
 margin-top: 9px;
 padding: 0;
 }
+.main-content img {
+ width: 300px; 
+ height: 90%; 
+ word-wrap: none; 
+}
+@media (max-width:768px){
+  .main-content img {
+  width: 360px; 
+  height: 90%; 
+  word-wrap: none; 
+}
+  }
 .main-content div {
   margin-top: 5%;
 }
