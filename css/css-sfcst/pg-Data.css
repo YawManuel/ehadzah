@@ -14,12 +14,12 @@ a {
   color: var(--primary-color);
 }
 
-.yehadzah a {
-  color: red;
-}
-
 .mainpg {
   background-image: url("../../assets/img/img-sfcst/DataPic.jpg");
+}
+
+.yehadzah a {
+  color: red;
 }
 
 .infobox1,

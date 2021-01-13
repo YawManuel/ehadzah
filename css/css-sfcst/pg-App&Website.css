@@ -6,7 +6,7 @@
   
   body {
     font-family: 'Open Sans', sans-serif;
-    line-height: 1.5;
+    /* line-height: 1.5; */
   }
   
   a {
@@ -16,10 +16,10 @@
 
 .mainpg {
     background-image: url("../../assets/img/img-sfcst/App&Web Pic.jpg");
-    width: 100%;
-    /* height: 80vh;  */
+    /* width: 100%;
+    height: 80vh; 
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
 }
 
 .yehadzah a {
@@ -29,6 +29,7 @@
 @media(min-width: 760px){
   .submainpg h2 {
   font-size: 4rem;
+  margin-top: 13vh;
   }
 }
 .submainpg {
@@ -38,7 +39,7 @@ padding-top: 5%;
   color: white; 
   font-family: lucida; 
   font-size: 5vh;
-  margin-top: 20vh;
+  margin-top: 18vh;
   margin-left: 20%;
   margin-right: 30%;
   }
