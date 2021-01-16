@@ -28,7 +28,7 @@ a {
   line-height: 1.5;
 }
 
-.infobox1 img {
+.infobox1 img, .infobox2 img, .infobox3 img {
   align-self: auto;
   width: 70%;
   height: 50%; 

@@ -26,6 +26,20 @@
     color: red;
 }
 
+.infobox1,
+.infobox2,
+.infobox3 img {
+  line-height: 1.5;
+}
+
+.infobox1 img, .infobox2 img, .infobox3 img {
+  align-self: auto;
+  width: 70%;
+  height: 50%; 
+  margin-top: 5%; 
+  margin-bottom: 5%; 
+}
+
 @media(min-width: 760px){
   .submainpg h2 {
   font-size: 4rem;

@@ -59,9 +59,89 @@ h1 {
   height: 100vh;
 }
 
+/* the slideshow style 
+************************************ */
+.slideshow-container {
+    max-width: 1000px;
+    height: auto;
+    position: relative;
+    margin: auto;
+    background-color: #292c2f;
+    
+}
+
+.mySlides {
+  display: none;
+  height: 400px;
+}
+
+.mySlides img {
+  height: 400px;
+}
+
+/* .prev, */
+.next {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: red;
+    background-color: #292c2f;
+    font-weight: bold;
+    font-size: 15px;
+    transition: .6s ease;
+    border-radius: 100%;
+    border: 1px solid red;
+}
+
+.next {
+    right: 30px;
+}
+ 
+/* .prev {
+    left: 10px;
+}  */
+
+.prev:hover,
+.next:hover {
+    color: red;
+    background-color: #292c2f;
+}
+
+.divtxt {
+    position: absolute;
+    font-family: lucida;
+    height: 100px;
+    margin: 10px;
+    width: auto;
+}
+.text {
+    color: white;
+    font-size: 25px;
+    font-family: lucida;
+    align-content: center;
+    padding-left: 10%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 200px;
+    width: 80%;
+    text-align: center;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0
+}
+
  /* text animation 
  *************************************/
- .ytxtanimt {
+ /* .ytxtanimt {
   font-family: 'sans-serif';
   height: 70vh;
   width: 100%;
@@ -70,14 +150,15 @@ h1 {
   box-shadow: aqua;
   overflow:hidden;
   position: absolute;
-}
+} */
 
 .ytxtcontainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 70vh;
+  justify-content: top;
+  align-items: top;
+  z-index: 5;
+  height: 20vh;
   width: 100%;
 }
 
@@ -185,7 +266,10 @@ h1 {
 .noteicons {
   display: flex;
   flex-direction: row;
+  align-items: center;
   margin-top: 60px;
+  margin-left: 65px;
+  width: 40vw;
   font-size: 4;
  }
  .social-icons {
@@ -196,6 +280,15 @@ h1 {
 .content {
   z-index: 2;
   align-items: center;
+  width: 100%;
+}
+@media(min-width: 720px) {
+  .noteicons {
+    margin-left: 255px;
+  }
+  .content {
+    width: auto;
+  }
 }
 .content h1 {
   font-family: 'Lucida Sans';
