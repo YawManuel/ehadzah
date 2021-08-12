@@ -112,8 +112,9 @@ h1 {
 }
 
 .divtxt {
+    font: bold;
     position: absolute;
-    font-family: lucida;
+    font-family: 'lucida Sans';
     height: 100px;
     margin: 10px;
     width: auto;
@@ -136,7 +137,7 @@ h1 {
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
-    top: 0
+    top: 0;
 }
 
  /* text animation 
