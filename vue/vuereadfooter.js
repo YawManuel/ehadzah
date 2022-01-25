@@ -13,9 +13,7 @@ Vue.component('vuereadfooter', {
                        <a href="tel:+233 54 989 2349">+233 54 989 2349</a>
                     </p>
                 </div>
-                <div><i class="fa fa-envelope footer-contacts-icon"></i>
-                    <p> <a href="mailto: ehadzah@gmail.com" target="_blank">ehadzah@gmail.com</a></p>
-                </div>
+                
             </div>
             
             <div class="footer-about">
@@ -25,7 +23,7 @@ Vue.component('vuereadfooter', {
                             class="fa fa-linkedin"></i></a>
 
             </div>
-             <p class="company-name">ehadzah © 2020-2021 </p>
+             <p class="company-name">ehadzah © 2022 </p>
         </div>
     </footer>`
     
