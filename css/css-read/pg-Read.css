@@ -86,6 +86,12 @@ padding: 0;
   height: 90%; 
   word-wrap: none; 
 }
+.main-content {
+width: 55vw;
+}
+.main-article{
+  width: 55vw;
+}
   }
 .main-content div {
   margin-top: 5%;

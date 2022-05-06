@@ -212,6 +212,7 @@ h1 {
 .ytxth2 {
   font-size: 2rem;
   font-family: 'Lucida Sans';
+  margin-top: 20px;
   color: white;
 }
 
@@ -249,13 +250,32 @@ h1 {
   }
 }
 
+
 /* bodysection two styles
 ************************************ */
 .sectwo {
   height: 500%;
   background-color: green;
 }
- 
+
+/* bodysection three
+************************************ */
+ .popular-data {
+  width: 100%; 
+ }
+ .popular-data button {
+  /* display: inline-block; */
+  text-align: center;
+  padding: 5px 15px;
+  background: rgb(7, 8, 36);
+  color: #fff;
+  border-radius: 10px;
+  border: solid rgb(12, 8, 8) 1px;
+  margin-top: 25px;
+  opacity: 0.7; 
+ }
+
+
 /* background video
 ************************************ */
 .showcase {
@@ -427,6 +447,10 @@ hr {
     /* padding: 0; */
 }
 
+.popular-data { 
+  margin-top: 5vh;
+}
+
 @media(min-width: 720px){
 .yartrend {
     margin-left: 200px;
@@ -436,6 +460,11 @@ hr {
     width: 30%;
 }
 .yartrend h2 {
-    font-size: 5vh;
+    font-size: 19px;
+}
+
+.popular-data {
+  width: 22vw;
+  margin-top: 0vh;
 }
 }

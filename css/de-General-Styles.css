@@ -344,8 +344,8 @@ margin-top: 15px;
 padding: 10px;
 border-radius: 8px;
 box-shadow: -7px -7px aliceblue;
-border-right: 2px solid aliceblue;
-border-bottom: 2px solid aliceblue;
+border-right: 4px solid aliceblue;
+border-bottom: 4px solid aliceblue;
 }
 .mainpg1 p {
   align-items: center;
@@ -357,7 +357,7 @@ border-bottom: 2px solid aliceblue;
 /*           de-Footer
  **************************************** */
  footer {
-  background-color:#292c2f;
+  background-color:#02020e;
   box-shadow:0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing:border-box;
   width:100%;
@@ -368,9 +368,9 @@ border-bottom: 2px solid aliceblue;
   color:#fff;
 }
 
-.footer-navigation h3 {
-  margin:0;
-  font:normal 36px Cookie, cursive;
+.footer-navigation p {
+  /* margin:0;
+  font:normal 36px Cookie, cursive; */
   margin-bottom:20px;
   color:#fff;
 }
@@ -404,8 +404,14 @@ border-bottom: 2px solid aliceblue;
     padding: 0;
     /* margin-top:0px; */
     margin-left: 100px;
-    margin-right: 100px;
-    
+    margin-right: 100px;  
+  }
+  .infobox1, .infobox2, .infobox3 {
+    width: 35vw;
+   }
+  .infobox1 {
+    padding-right: 0px;
+    margin-left: 10vw;
   }
 }
 
@@ -462,6 +468,9 @@ span.new-line-span {
   font-weight:normal;
   margin:0;
 }
+/* .footer-about {
+ align-content: center;
+} */
 
 div.social-links {
   margin-top:20px;
@@ -486,10 +495,12 @@ div.social-links {
 @media (min-width: 765px) {
   .rowfooter {
  display: grid;  
- grid-gap: 25px;
+ /* grid-gap: 25px; */
  padding: 0;
- align-content: center;
+ width: 50%;
+ margin-left: 25%;
+ align-self: center;
  list-style: none;
- grid-template-columns: 1fr 1fr 1fr;
+ grid-template-columns: 1fr 1fr;
   }
 }
