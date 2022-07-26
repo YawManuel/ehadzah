@@ -1,17 +1,18 @@
-
 * {
     box-sizing: border-box;
-  }
-  
-  body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
     font-family: 'sans-serif';
-  }
-  
-  a {
+}
+
+a {
     text-decoration: none;
     color: var(--primary-color);
-  }
-  
+}
+
 
 .yehadzah a {
     color: red;
@@ -25,16 +26,16 @@
     position: relative;
     margin: auto;
     background-color: #292c2f;
-    
+
 }
 
 .mySlides {
-  display: none;
-  height: 400px;
+    display: none;
+    height: 400px;
 }
 
 .mySlides img {
-  height: 400px;
+    height: 400px;
 }
 
 .prev,
@@ -75,6 +76,7 @@
     margin: 10px;
     width: auto;
 }
+
 .text {
     color: white;
     font-size: 25px;
@@ -122,37 +124,65 @@
     margin-right: 200px;
     margin-left: 10px;
 }
+
 hr {
     background-color: solid 1px red;
     z-index: 20;
     margin-top: 10px;
     margin-right: 10%;
-    margin-left: 10%; 
+    margin-left: 10%;
+}
+
+.gridd-show-two {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+@media (min-width: 650px) {
+    .grid-show-two {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .gridd-show-two {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+    }
 }
 
 .yartrend {
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 0;
-    margin-bottom: 5%;
+    /* margin-bottom: 5vh; */
     align-items: center;
     padding: 0;
 }
+
 .yartrend a {
     display: block;
     margin-top: 10px;
 }
+
 .yartrend figure {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     flex-wrap: nowrap;
 }
+
 .yartrend img {
     width: 20vh;
     height: 20vh;
     margin-top: 0;
     padding: 0;
 }
+
 .yartrend h2 {
     height: 20vh;
     font-size: 100%;
@@ -160,22 +190,24 @@ hr {
     margin-left: 10px;
 }
 
-@media(min-width: 720px){  
-.yartrend {
-    margin-left: 200px;
-    margin-right: 200px;
-}
-.yartrend img {
-    width: 35vh;
-    height: 35vh;
-    margin-top: 20px;
-    padding: 0;
-}
-.yartrend h2 {
-    font-size: 5vh;
-}
+@media(min-width: 720px) {
+    .yartrend {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
 
-.spanhr {
-    margin-top: 30px;
-}
+    .yartrend img {
+        width: 35vh;
+        height: 35vh;
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    .yartrend h2 {
+        font-size: 5vh;
+    }
+
+    .spanhr {
+        margin-top: 30px;
+    }
 }
