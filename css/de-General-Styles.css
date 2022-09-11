@@ -9,6 +9,7 @@
   padding: 0;
 }
 
+
 /* Mobile first */
 
 /* Dropdown Button */
@@ -322,6 +323,7 @@ margin-bottom: 12px;
  .mainpg {
   width: 100%;
   height: 72vh; 
+  background-color:#ffffff;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -346,6 +348,7 @@ border-radius: 8px;
 box-shadow: -7px -7px aliceblue;
 border-right: 4px solid aliceblue;
 border-bottom: 4px solid aliceblue;
+background-color:#ffffff;
 }
 .mainpg1 p {
   align-items: center;
