@@ -11,7 +11,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: rgb(247, 246, 246);
+  background-color: rgb(244, 245, 255);
 }
 
 a {
@@ -119,10 +119,6 @@ img {vertical-align: middle;}
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
-}
-
-.Active {
-  background-color: #717171;
 }
 
 /* Fading animation */
@@ -629,6 +625,11 @@ img, svg {
   margin-right: calc(-.5 * var(--bs-gutter-x));
   margin-left: calc(-.5 * var(--bs-gutter-x));
 }
+ @media(min-width: 720px) {
+  .secsec {
+    margin-top: 10vh!important;
+  }  
+ }
 
 bodyy {
   margin: 0;
@@ -746,10 +747,6 @@ p {
   font-size: calc(1.275rem + .3vw);
 }
 
-a:hover {
-  color: #0a58ca;
-}
-
 .col {
   flex: 1 0 0%;
 }
@@ -775,7 +772,7 @@ a:hover {
 
 #main {
   height: 100vh;
-  background: url("../../assets/img/login.webp");
+  background: blue;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -811,16 +808,6 @@ a:hover {
 #ventaspro-logo {
   margin-top: 20px;
   margin-bottom: 10px;
-}
-
-a {
-  color: #0d6efd;
-  /*text-decoration: underline;*/
-}
-
-a {
-  color: #0d6efd;
-  text-decoration: none;
 }
 
 
