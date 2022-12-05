@@ -32,6 +32,13 @@ h1 {
   grid-template-columns: repeat(2, 1fr);
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
+.gridd-show-three {
+  display: grid;
+  grid-gap: 70px;
+  margin-top: 25px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
 
 @media (min-width: 650px) {
 .grid-show-two {
@@ -427,6 +434,20 @@ img {vertical-align: middle;}
   .content {
     width: auto;
   }
+
+  .btnn {
+    /* display: inline; */
+    text-align: center;
+    padding: 10px 30px;
+    background: rgb(227, 234, 241);
+    border-radius: 5px;
+    border: solid #fff 1px;
+    color:  rgb(43, 15, 108);
+    
+    margin: 25px;
+    opacity: 0.7;
+  
+  }
 }
 .content h1 {
   font-family: 'Lucida Sans';
@@ -443,6 +464,20 @@ img {vertical-align: middle;}
   border-radius: 5px;
   border: solid #fff 1px;
   margin-top: 25px;
+  opacity: 0.7;
+
+}
+
+.btnn {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 30px;
+  background: rgb(227, 234, 241);
+  color: rgb(43, 15, 108);
+  border-radius: 5px;
+  border: solid #fff 1px;
+  /* padding-top: 20%; */
+  margin-top: 2%;
   opacity: 0.7;
 
 }

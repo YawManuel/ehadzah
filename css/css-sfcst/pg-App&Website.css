@@ -40,9 +40,26 @@
   margin-bottom: 5%; 
 }
 
+.infobox3 a {
+  display: block;
+  width: 40%;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 4vh;
+  margin: 0 auto;
+  margin-top: 13vh;
+}
+
+@media (max-width: 760px) {
+  .infobox3 a {
+    margin-top: 16vh;
+    /* font-size: 3vh; */
+  }
+}
+
 @media(min-width: 760px){
   .submainpg h2 {
-  font-size: 4rem;
+  /* font-size: 4rem; */
   margin-top: 13vh;
   }
 }
@@ -56,4 +73,11 @@ padding-top: 5%;
   margin-top: 18vh;
   margin-left: 20%;
   margin-right: 30%;
+  }
+
+  .buildp {
+    font-family: lucida;
+    font-size: 2.5vh;
+    color: rgb(58, 60, 67);
+    line-height: 1.3;
   }

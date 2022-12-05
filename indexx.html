@@ -27,7 +27,6 @@
     <link rel="stylesheet" href="css/css-read/pg-Articles.css">
     <link rel="stylesheet" href="css/Article-Clean.css">
     <link rel="stylesheet" href="css/index.css">
-    <!-- <link rel="stylesheet" href="css/css-read/pg-Articles.css"> -->
     <link rel="stylesheet" href="css/de-General-Styles.css">
 </head>
 
@@ -35,46 +34,45 @@
     <!-- the navigation bar n -->
     <header class="ynavig">
         <div class="dnav">
-            <span class="yehadzah"><a href="./index.html">ehadzah</a></span>
+            
+            <a href="./index.html" class="yehadzah"><img src="assets/ehadzahFavicon.png" alt="" style=" margin: 2vh 1.5vw 10% 2% ; height: 5vh; width: 9vw;">Ehadzah</a>
             <div class="ynavitems">
                 <ul class="ynavitems">
                     <div class="droppdown  anchorlistyle3">
-
                         <a href="" class=" ynavlist menu-nav__link anchorstyle2">Build <i class="fa fa-caret-down"
                                 aria-hidden="true"></i></a>
                         <div class="droppdown-content">
                             <li class="ynavlist">
                                 <a href="./Dev.html" class="menu-nav__link">
-                                    Dev
+                                    Digital Platform
                                 </a>
                             </li>
                             <li class="ynavlist"> <a href="./Data.html" class="menu-nav__link">
-                                    Data
+                                    Automated Workforce
                                 </a>
                             </li>
                             <li class="ynavlist">
                                 <a href="./AI.html" class="menu-nav__link">
-                                    AI
+                                    Company DB
                                 </a>
                             </li>
                         </div>
 
                     </div>
                     <li class="ynavlist">
-                        <a href="./more-read/read.html" class="menu-nav__link">
-                            Insights
+                        <a href="./read/Understanding-Bitcoin-And-Its-Friends.html" class="menu-nav__link">
+                            Data Outlook
                         </a>
                     </li>
                     <li class="ynavlist">
-                        <a href="./read/Understanding-Bitcoin-And-Its-Friends.html" class="menu-nav__link">
-                            Read
+                        <a href="./read/Blog.html" class="menu-nav__link">
+                            Industry
                         </a>
                     </li>
                 </ul>
             </div>
-            <div class="menu-btn">
-                <span class="menu-btn__burger"></span>
-            </div>
+            <input type="checkbox" name="toggle" class="menu-btn" id="toggle" />
+            <label for="navbar-toggle"></label>
         </div>
 
         <nav class="nav">
@@ -84,33 +82,33 @@
                 </a>
                 <li class="menu-nav__item shift">
                     <a href="./Dev.html" class="menu-nav__link">
-                        Dev
+                      Digital Platform  
                     </a>
                 </li>
                 <li class="menu-nav__item shift navspace">
                     <a href="./Data.html" class="menu-nav__link">
-                        Data
+                        Automated Workforce
                     </a>
                 </li>
                 <li class="menu-nav__item shift active navspace">
                     <a href="./AI.html" class="menu-nav__link">
-                        AI
+                        Company DB
+                    </a>
+                </li>
+
+                <li class="menu-nav__item navspace">
+                    <a href="./read/Understanding-Bitcoin-And-Its-Friends.html" class="menu-nav__link">
+                        Data Outlook
                     </a>
                 </li>
                 <li class="menu-nav__item active navspace">
-                    <a href="./more-read/read.html" class="menu-nav__link">
-                        Insights
-                    </a>
-                </li>
-                <li class="menu-nav__item navspace">
-                    <a href="./read/Understanding-Bitcoin-And-Its-Friends.html" class="menu-nav__link">
-                        Read
+                    <a href="./read/Blog.html" class="menu-nav__link">
+                        Industry
                     </a>
                 </li>
             </ul>
         </nav>
     </header>
-
     <!-- the body section one -->
     <!-- Slide Show -->
     <section style="height: 70vh; background-color: rgb(20, 16, 14)">
@@ -143,25 +141,25 @@
 
     <!-- the body section three (bckgrnd video) -->
     <section class="showcase">
-            <div class="video-container">
-                <video style="" src="assets/EhadzahBackgroundVid.mp4" autoplay muted loop ></video>
-            </div>
+        <div class="video-container">
+            <video style="" src="assets/EhadzahBackgroundVid.mp4" autoplay muted loop></video>
+        </div>
 
-            <div class="gridd-show-two" style="">
-                <div class="content">
-                    <div class="ytxtcontainer">
-                        <h1 class="ytxth1">
-                            <span class="txt-type" data-wait="3000"
-                                data-words='["Data Insights", "Industry Insights"]'></span>
-                        </h1>
-                        <h2 class="ytxth2">@ ehadzah</h2>
-                    </div>
-
-                    <P>Insights from the tech-world</P>
-                    <a href="./in/DevRead/Why-and-what-it-takes-to-learn-to-read-write-and-create-Computer-Programming-languages.html"
-                        class="btn">READ</a>
+        <div class="gridd-show-two" style="">
+            <div class="content">
+                <div class="ytxtcontainer">
+                    <h1 class="ytxth1">
+                        <span class="txt-type" data-wait="3000"
+                            data-words='["Data Insights", "Industry Insights"]'></span>
+                    </h1>
+                    <h2 class="ytxth2">@ ehadzah</h2>
                 </div>
+
+                <P>Insights from the tech-world</P>
+                <a href="./in/DevRead/Why-and-what-it-takes-to-learn-to-read-write-and-create-Computer-Programming-languages.html"
+                    class="btn">READ</a>
             </div>
+        </div>
     </section>
 
     <article class="yartrend">
@@ -212,6 +210,7 @@
                 </a>
             </div>
         </div>
+        <section>great times ahead</section>
     </article>
 
     <!-- Slide Show -->
@@ -266,34 +265,54 @@
 
         </div>
 
-        <div>
-            <article class="grid-show-two yartrend" style="padding-top: !important; height: ;">
-                <div>
-                    <div class="spanhr">MORE READ</div>
-                    <hr>
-                    <a
+
+        <!-- <article class="grid-show-two yartrend" style="padding-top: !important; height: ;"> -->
+
+        <div class="indussi" style="width: 80;">
+            <h2 style="margin-top: 5%; text-align: center;">INDUSTRY INSIGHTS</h2>
+            <p style="width: 90%; margin-left: 14px;">
+               Know and harness the technologies 
+               by getting deep insights on the digital technologies disrupting your company industry.
+            </p>
+            <div style="margin-top: 10%; margin-left: 12px;">
+                <h2>Knowing your industry</h2>
+
+                <div class="grid-show-three" style="margin-top: 5%; margin-left: 15px;">
+                    <a class="btnn" style="width: "
                         href="more-read/How-to-get-a-job-as-a-software-engineer-in-the-tech-industry-as-a-recent-coding-graduate.html">
-                        <figure>
-                            <Img src="assets/img/img-sfcst/sfcstRead/handshake1.jpg" />
-                            <h2>How to get a job as a software engineer in the tech industry as a recent coding graduate
-                            </h2>
-                        </figure>
+                        Finance
                     </a>
-                    <a href="more-read/Keeping-Up-With-The-New-Apples-From-Steve-Jobs-Farm.html">
-                        <figure>
-                            <Img src="assets/img/img-read/apple.jpg" />
-                            <h2>Keeping Up With The New Apples from Steve Jobs Farm</h2>
-                        </figure>
+                    <a class="btnn" style="width:;"
+                        href="more-read/Keeping-Up-With-The-New-Apples-From-Steve-Jobs-Farm.html">
+                        E-commerce
                     </a>
+                    <a class="btnn"
+                        href="more-read/How-to-get-a-job-as-a-software-engineer-in-the-tech-industry-as-a-recent-coding-graduate.html">
+                        Fashion and Beauty
+                    </a>
+                    <div class="grid-show-two" style="margin-left: px;">
+                        <a class="btnn" href="more-read/Keeping-Up-With-The-New-Apples-From-Steve-Jobs-Farm.html">
+                            Electronics
+                        </a>
+                        <a class=btnn href="more-read/Keeping-Up-With-The-New-Apples-From-Steve-Jobs-Farm.html">
+                            Education
+                        </a>
+                        <a class="btnn" href="more-read/Keeping-Up-With-The-New-Apples-From-Steve-Jobs-Farm.html">
+                            Construction
+                        </a>
+                        <a class="btnn" href="more-read/Keeping-Up-With-The-New-Apples-From-Steve-Jobs-Farm.html">
+                            Other Industries
+                        </a>
+                    </div>
                 </div>
-            </article>
+            </div>
         </div>
 
     </section>
 
 
 
-   <section class="secsec" style=" margin-top: 50vh;">
+    <section class="secsec" style=" margin-top: 110%;">
         <div class="container py-4 py-xl-5">
             <div class="row mb-5" style="background: var(--bs-white);">
                 <div class="col-md-8 col-xl-6 text-center mx-auto">
@@ -303,12 +322,12 @@
                         into two main services: Ehadzah Read &amp; Ehadzah Build<br></p>
                 </div>
             </div>
-            <div class="row">
+            <div class="grid-show-two">
                 <div class="col offset-lg-0 offset-xl-2 text-start">
-                    <div class="text-start d-flex flex-column align-items-center align-items-xl-center"
-                        style="color:;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                            width="1em" height="1em" fill="currentColor" class="text-start"
-                            style="font-size: 73.88px;color: rgb(233, 54, 54);padding-top: 0px;margin-top: 5px;margin-right: 100px;">
+                    <div class="text-start d-flex flex-column align-items-center align-items-xl-center" style="color:;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em"
+                            fill="currentColor" class="text-start"
+                            style="font-size: 73.88px;color: rgb(197, 70, 70);padding-top: 0px;margin-top: 5px;margin-right: 100px;">
                             <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
                             <path
                                 d="M416 48C416 39.13 408.9 32 400 32h-64C327.1 32 320 39.13 320 48V96h96.04L416 48zM63.88 160.1C61.34 253.9 3.5 274.3 0 404V448c0 17.6 14.4 32 32 32h128c17.6 0 32-14.4 32-32V128H95.88C78.26 128 64.35 142.5 63.88 160.1zM448.1 160.1C447.6 142.5 433.7 128 416.1 128H320v320c0 17.6 14.4 32 32 32h128c17.6 0 32-14.4 32-32v-44C508.5 274.3 450.7 253.9 448.1 160.1zM224 288h64V128H224V288zM176 32h-64C103.1 32 96 39.13 96 48L95.96 96H192V48C192 39.13 184.9 32 176 32z">
@@ -321,7 +340,8 @@
                                 research teams&nbsp; and partner writers<br></p>
                             <a class="text-start" href="#">Learn
                                 More&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
-                                    fill="currentColor" style="color:rgb(233, 54, 54);" viewBox="0 0 16 16" class="bi bi-arrow-right">
+                                    fill="currentColor" style="color: red;" viewBox="0 0 16 16"
+                                    class="bi bi-arrow-right">
                                     <path fill-rule="evenodd"
                                         d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
                                     </path>
@@ -332,20 +352,22 @@
                 </div>
                 <div class="col offset-lg-0 offset-xl-0" style="padding-left: 0px;">
                     <div class="text-start d-flex flex-column align-items-center align-items-xl-center"
-                        style="background: ;padding-top: 0px;"><svg xmlns="http://www.w3.org/2000/svg"
-                            width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-boxes"
-                            style="font-size: 73.88px;color: rgb(233, 54, 54);padding-top: 0px;margin-top: 14px;margin-right: 100px;">
+                        style="background: ;padding-top: 0px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                            height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-boxes"
+                            style="font-size: 73.88px;color: rgb(197, 70, 70) ;padding-top: 0px;margin-top: 14px;margin-right: 100px;">
                             <path fill-rule="evenodd"
                                 d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z">
                             </path>
                         </svg>
                         <div class="px-3">
                             <h4 class="text-start" style="padding-top: 9px;">Build</h4>
-                            <p class="text-start" style="padding-top: 14px;color: var(--bs-gray-800);">Erat netus est
-                                hendrerit, nullam et quis ad cras porttitor iaculis. Bibendum vulputate cras aenean.</p>
+                            <p class="text-start" style="padding-top: 14px;color: var(--bs-gray-800);">
+                              Ehadzah Build builds digital platforms and technologies for SMBs and businesses, at where 
+                              revenue meets technology   
+                            </p>
                             <a class="text-center" href="#">Learn More&nbsp;<svg xmlns="http://www.w3.org/2000/svg"
-                                    width="1em" height="1em" fill="currentColor" style="color: rgb(233, 54, 54);" viewBox="0 0 16 16"
-                                    class="bi bi-arrow-right">
+                                    width="1em" height="1em" fill="currentColor" style="color: red;"
+                                    viewBox="0 0 16 16" class="bi bi-arrow-right">
                                     <path fill-rule="evenodd"
                                         d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
                                     </path>
@@ -357,40 +379,33 @@
             </div>
         </div>
         <div id="main"
-            style="height: 329px;background: url(&quot;assets/img/img-sfcst/bluemap.jpg&quot;) center / cover no-repeat, #0d0c0c;">
+            style="height: 329px;background: url(&quot;assets/img/img-sfcst/bluemap.jpg&quot;) center / cover no-repeat, #252323;">
             <div style="height: inherit;background:inherit;"></div>
             <div class="text-center" id="info">
                 <h1 style="font-size: 250%;text-align: center;padding-top: 10px;font-family: Alata, sans-serif;">Let's
                     Start Building</h1>
                 <div class="row">
                     <div class="col" style="margin-top: 0px;">
+                        
                         <a href="#">
                             <h5 style="padding-bottom: 10px;font-family: Akronim, serif;"><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
-                                    viewBox="0 0 16 16" class="bi bi-telephone-plus"
-                                    style="padding-top: 0px;margin-top: 20px;font-size: 46px;color: #221c2a;margin-right: 10px;">
-                                    <path
-                                        d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z">
-                                    </path>
-                                    <path fill-rule="evenodd"
-                                        d="M12.5 1a.5.5 0 0 1 .5.5V3h1.5a.5.5 0 0 1 0 1H13v1.5a.5.5 0 0 1-1 0V4h-1.5a.5.5 0 0 1 0-1H12V1.5a.5.5 0 0 1 .5-.5z">
-                                    </path>
-                                </svg>&nbsp;<h2>+233 54 989 2349</h2></h5>
+                                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                                viewBox="0 0 16 16" class="bi bi-telephone-plus"
+                                style="padding-top: 0px;margin-top: 20px;font-size: 46px;color: #221c2a;margin-right: 10px;">
+                                <path
+                                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z">
+                                </path>
+                                <path fill-rule="evenodd"
+                                    d="M12.5 1a.5.5 0 0 1 .5.5V3h1.5a.5.5 0 0 1 0 1H13v1.5a.5.5 0 0 1-1 0V4h-1.5a.5.5 0 0 1 0-1H12V1.5a.5.5 0 0 1 .5-.5z">
+                                </path>
+                            </svg>&nbsp;<h2>+233 54 989 2349</h2>
+                        </h5>
                         </a>
-                        <!-- <a href="#">
-                            <h5 style="font-family: Akronim, serif;"><svg xmlns="http://www.w3.org/2000/svg" width="1em"
-                                    height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-envelope-plus"
-                                    style="padding-top: 0px;margin-top: 0px;font-size: 46px;color: #221c2a;margin-right: 10px;">
-                                    <path fill-rule="evenodd"
-                                        d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471 1.069.64.257.155.257-.154 1.33-.798L15 5.383V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825Zm1.22-.434L1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217L9.072 7.774 8 8.417l-1.072-.643ZM16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5Z">
-                                    </path>
-                                </svg>&nbsp;build@ehadzah.com</h5>
-                        </a> -->
                     </div>
                 </div>
             </div>
         </div>
-     </section>
+    </section>
 
     <!--   FOOTER
     --------------------- -->

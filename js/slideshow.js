@@ -2,6 +2,10 @@ var slideIndex = 1;
 
 var myTimer;
 
+var todo;
+
+let mightyNow;
+
 var slideshowContainer;
 
 window.addEventListener("load",function() {
