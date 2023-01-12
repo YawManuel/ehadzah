@@ -439,6 +439,16 @@ background-color: rgba(000, 000, 000, 0.5);
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
+.cl {
+  background-color: rgb(255, 255, 255);
+}
+
+.p-4 {
+font-family: 'Lucida Sans', 'Lucida Sans Regular';
+line-height: 1.5;
+color: rgb(114, 115, 135);
+}
+
 .infobox1, .infobox2, .infobox3 {
 height: 50vh;
 margin: 10px;
@@ -521,6 +531,10 @@ background-color:#ffffff;
 @media (max-width:767px) {
   .footer-contacts {
     margin:30px 0;
+  }
+  .ig {
+    height: 0px;
+    visibility: collapse;
   }
 }
 
