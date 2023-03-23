@@ -363,7 +363,7 @@ img {
 ************************************ */
 .sectwo {
   height: 500%;
-  background-color: green;
+  /* background-color: green; */
 }
 
 /* bodysection three
@@ -826,7 +826,7 @@ p {
 .text-start, .w-lg-50 {
   font-family: 'Lucida Sans';
   line-height: 1.5;
-  color: rgb(65, 132, 132);
+  color: #3a4052;
 }
 
 @media (min-width:768px) {
