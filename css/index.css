@@ -271,7 +271,8 @@ img {
 .text {
   color: white;
   font-size: 25px;
-  font-family: lucida;
+  font-family: "lucida Sans";
+  font-weight: 30.5px;
   align-content: center;
   padding-left: 10%;
   margin: 0 auto;
