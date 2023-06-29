@@ -901,35 +901,6 @@ h4 {
   margin-top: var(--bs-gutter-y);
 }
 
-#main {
-  height: 100vh;
-  background: blue;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-#info {
-  width: 90%;
-  /*height: 85%;*/
-  border-radius: 5px;
-  color: var(--bs-gray-dark);
-  background-color: rgba(255, 255, 255, 0.8);
-  left: 50%;
-  top: 45%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  font-size: 12px;
-  padding-bottom: 30px;
-}
-
-@media (min-width: 576px) {
-  #info {
-    max-width: 450px;
-  }
-}
-
 #form-login {
   max-width: 70%;
   margin: 0 auto;
@@ -939,4 +910,160 @@ h4 {
 #ventaspro-logo {
   margin-top: 20px;
   margin-bottom: 10px;
+}
+
+/*           de-Footer
+ **************************************** */
+ footer {
+  background-color:#02020e;
+  box-shadow:0 1px 1px 0  rgba(0, 0, 0, 0.12);
+  box-sizing:border-box;
+  width:100%;
+  text-align:left;
+  font:bold 16px sans-serif;
+  padding:55px 50px;
+  bottom:0;
+  color:#fff;
+}
+
+.footer-navigation p {
+  /* margin:0;
+  font:normal 36px Cookie, cursive; */
+  margin-bottom:20px;
+  color:#fff;
+}
+
+.footer-navigation h3 a {
+  text-decoration:none;
+  color:#fff;
+}
+
+.footer-navigation h3 span {
+  color:#5383d3;
+}
+
+.footer-navigation p.links a {
+  color:#fff;
+  text-decoration:none;
+}
+
+.company-name {
+  color:#8f9296;
+  font-size:14px;
+  font-weight:normal;
+  margin-top:20px;
+  padding: 0;
+  text-align: center;
+}
+
+@media (min-width:767px) {
+  .company-name {
+    text-align: center;
+    width: 140px;
+    padding: 0;
+    /* margin-top:0px; */
+    margin-left: 100px;
+    margin-right: 100px;  
+  }
+  .infobox1, .infobox2, .infobox3 {
+    width: 35vw;
+   }
+  .infobox1 {
+    padding-right: 0px;
+    margin-left: 10vw;
+  }
+}
+
+@media (max-width:767px) {
+  .footer-contacts {
+    margin:30px 0;
+  }
+  .ig {
+    height: 0px;
+    visibility: collapse;
+  }
+}
+
+.footer-contacts p {
+  display:inline-block;
+  color:#ffffff;
+  vertical-align:middle;
+}
+
+.footer-contacts p a {
+  color:#5383d3;
+  text-decoration:none;
+}
+
+.fa.footer-contacts-icon {
+  background-color:#33383b;
+  color:#fff;
+  font-size:18px;
+  width:38px;
+  height:38px;
+  border-radius:50%;
+  text-align:center;
+  line-height:38px;
+  margin:10px 15px 10px 0;
+}
+
+span.new-line-span {
+  display:block;
+  font-weight:normal;
+  display:block;
+  font-weight:normal;
+  font-size:14px;
+  line-height:2;
+}
+
+.footer-about h4 {
+  display:block;
+  color:#fff;
+  font-size:14px;
+  font-weight:bold;
+  margin-bottom:20px;
+}
+
+.footer-about p {
+  line-height:20px;
+  color:#92999f;
+  font-size:13px;
+  font-weight:normal;
+  margin:0;
+}
+/* .footer-about {
+ align-content: center;
+} */
+
+div.social-links {
+  margin-top:20px;
+  color:#fff;
+}
+
+.social-links a {
+  display:inline-block;
+  width:35px;
+  height:35px;
+  cursor:pointer;
+  background-color:#33383b;
+  border-radius:2px;
+  font-size:20px;
+  color:#ffffff;
+  text-align:center;
+  line-height:35px;
+  margin-right:5px;
+  margin-bottom:5px;
+}
+
+@media (min-width: 765px) {
+  .rowfooter {
+ display: grid;  
+ /* grid-gap: 25px; */
+ padding: 0;
+ width: 50%;
+ margin-left: 25%;
+ align-self: center;
+ list-style: none;
+ grid-template-columns: 1fr 1fr;
+  }
 }
